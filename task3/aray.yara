@@ -229,7 +229,7 @@ and uint8(12) % 23 < 23
 and uint8(41) % 27 < 27 
 and uint8(1) % 17 < 17 
 and uint8(26) > 31 
-and hash.sha256(56, 2) == "593f2d04aab251f60c9e4b8bbc1e05a34e920980ec08351a18459b2bc7dbf2f6" 
+and hash.sha256(56, 2) == "593f2d04aab251f60c9e4b8bbc1e05a34e920980ec08351a18459b2bc7dbf2f6" //"fl"
 and uint8(65) < 149 
 and filesize ^ uint8(51) != 0 
 and uint8(66) > 30 
@@ -323,7 +323,7 @@ and uint8(15) < 156
 and filesize ^ uint8(69) != 241 
 and filesize ^ uint8(35) != 18 
 and filesize ^ uint8(17) != 208 
-and hash.md5(0, 2) == "89484b14b36a8d5329426a3d944d2983" 
+and hash.md5(0, 2) == "89484b14b36a8d5329426a3d944d2983" //"ru"
 and filesize ^ uint8(4) != 23 
 and uint8(15) % 16 < 16 
 and filesize ^ uint8(75) != 35 
@@ -378,7 +378,7 @@ and filesize ^ uint8(10) != 205
 and uint8(25) & 128 == 0 
 and uint8(13) < 147 
 and uint8(42) & 128 == 0 
-and hash.md5(76, 2) == "f98ed07a4d5f50f7de1410d905f1477f" 
+and hash.md5(76, 2) == "f98ed07a4d5f50f7de1410d905f1477f" // "io"
 and filesize ^ uint8(48) != 99 
 and filesize ^ uint8(16) != 7 
 and uint8(11) < 154 
@@ -454,7 +454,7 @@ and uint8(52) > 25
 and uint8(74) & 128 == 0 
 and uint8(28) < 160 
 and uint8(51) & 128 == 0 
-and hash.md5(50, 2) == "657dae0913ee12be6fb2a6f687aae1c7" 
+and hash.md5(50, 2) == "657dae0913ee12be6fb2a6f687aae1c7" // "3A"
 and uint8(83) > 16 
 and uint8(31) > 7 
 and uint8(84) & 128 == 0 
@@ -495,7 +495,7 @@ and uint8(58) & 128 == 0
 and uint8(71) < 130 
 and uint8(41) & 128 == 0 
 and uint8(57) > 11 
-and hash.md5(32, 2) == "738a656e8e8ec272ca17cd51e12f558b" 
+and hash.md5(32, 2) == "738a656e8e8ec272ca17cd51e12f558b" // "ul"
 and filesize ^ uint8(8) != 2 
 and filesize ^ uint8(57) != 186 
 and uint8(11) & 128 == 0 
