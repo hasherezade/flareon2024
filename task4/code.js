@@ -65,12 +65,12 @@ function a0a() {
 }
 
 function a0f() {
-    document['getElementById']('caption1')[a0p(0xf56)] = !![], document['getElementById']('caption2')[a0p(0xf56)] = !![], document['getElementById']('caption3')['hidden'] = !![];
+    document['getElementById']('caption1')['hidden'] = !![], document['getElementById']('caption2')['hidden'] = !![], document['getElementById']('caption3')['hidden'] = !![];
     const a = document['getElementById']('meme-template');
     var b = a['value']['split']('.')[0x0];
-    a0d[b][a0p(0x1fc8) + 'h'](function(c, d) {
+    a0d[b]['forEach'](function(c, d) {
         var e = document['getElementById']('caption' + (d + 0x1));
-        e[a0p(0xf56)] = ![], e['style']['top'] = a0d[b][d][0x0], e['style'][a0p(0x158b9)] = a0d[b][d][0x1], e['textContent'] = a0c[Math['floor'](Math[a0p(0x6ec0)]() * (a0c['length'] - 0x1))];
+        e['hidden'] = ![], e['style']['top'] = a0d[b][d][0x0], e['style']['left'] = a0d[b][d][0x1], e['textContent'] = a0c[Math['floor'](Math['random']() * (a0c['length'] - 0x1))];
     });
 }
 a0f();
@@ -96,15 +96,11 @@ a0g['src'] = a0e[a0j['value']], a0j['addEventListener']('change', () => {
 function a0k() {
     const t = a0p,
         a = a0g['alt']['split']('/')['pop']();
-		document.write("ok");
     if (a !== Object['keys'](a0e)[0x5]) return;
-	document.write("ok1");
-    const b = a0l['textContent'],
-        c = a0m['textContent'],
-        d = a0n['textContent'];
-		document.write(b);
-		document.write(c);
-		document.write(d);
+	
+    const b = 'FLARE On',//a0l['textContent'],
+        c = 'Security Expert',//a0m['textContent'],
+        d = 'Malware';//a0n['textContent'];
     if (a0c['indexOf'](b) == 0xe && a0c['indexOf'](c) == a0c['length'] - 0x1 && a0c['indexOf'](d) == 0x16) {
         var e = new Date()['getTime']();
         while (new Date()['getTime']() < e + 0xbb8) {}
@@ -115,15 +111,10 @@ function a0k() {
 const a0l = document['getElementById']('caption1'),
     a0m = document['getElementById']('caption2'),
     a0n = document['getElementById']('caption3');
-a0l['addEventListener']('keyup', () => {
+a0l['addEventListener']('click', () => {
     a0k();
-}), a0m['addEventListener']('keyup', () => {
+}), a0m['addEventListener']('click', () => {
     a0k();
-}), a0n['addEventListener']('keyup', () => {
+}), a0n['addEventListener']('click', () => {
     a0k();
 });
-//const d = parseInt('219gnkFsR') / 0x1 * (parseInt('5142iBBIVf') / 0x2) + -parseInt('299445lffzkv') / 0x3 * (-parseInt('4XCdYTC') / 0x4) + parseInt('703160TKrEpj') / 0x5 + -parseInt('529920kcApdD') / 
-//0x6 + parseInt('1560608SBLnUa') / 0x7 * (parseInt('8vlJoZz') / 0x8) + -parseInt('5111253VMYDIt') / 0x9 + parseInt('40lIochO') / 0xa * (-parseInt(a0b(0x2e3b)) / 0xb);
-            
-//document.write('pop');// + 'egacy\x20' + , 'Revers' + a0p(0x10d3) + a0p(0x17a2), 'When you\x20dec' + a0p(0x8440) + a0p(0xd950) + 'bfuscated\x20co' + a0p(0x143ce) + a0p(0x562f) + 'kes\x20pe' + a0p(0x17b7c) + a0p(0x10d4a), a0p(0x257) + 'er\x20a\x20w' + a0p(0x16235) + a0p(0x168a9) + a0p(0xbbc2) + a0p(0x6e47) + 'ng', 'When\x20y' + a0p(0xd14e) + 'compiler\x20crashes', a0p(0x1525f) + a0p(0x2220) + a0p(0x18635) + a0p(0x12631) + a0p(0xd3c7), 'Security\x20\x27Ex' + a0p(0x11370), 'AI', a0p(0x12de4) + a0p(0x11202) + ',\x20but\x20can\x20yo' + a0p(0x3968) + '\x20it?', 'When y' + a0p(0x1a83) + a0p(0xabcf) + a0p(0x293c) + a0p(0x8e99) + 'e\x20firs' + a0p(0xe162), a0p(0x100c0) + a0p(0x8c1b) + a0p(0x3bba) + a0p(0xb640) + a0p(0x1490f), 'Reading\x20some' + a0p(0x16a1a) + a0p(0xa262) + a0p(0x247), a0p(0x15660), 'This\x20is\x20fine', a0p(0x17f91) + 'On', a0p(0xee13) + a0p(0xacec) + a0p(0xf9a7), 'string' + a0p(0xa56b), a0p(0x9e4) + a0p(0x1734) + a0p(0xe903) + 't.', 'When\x20you fin' + a0p(0x17ec6) + a0p(0xb32e) + a0p(0x17ef4) + a0p(0x131d8) + 'oit', a0p(0xb307) + 'ty\x20through\x20o' + a0p(0x11fca) + 'ty', a0p(0x104a) + 't\x20Coffee', a0p(0x132af), a0p(0x2c4) + 'e', '$1,000' + a0p(0x77d2), 'IDA\x20Pro', a0p(0xb307) + a0p(0xf501) + a0p(0x17d36));
-a0k();
