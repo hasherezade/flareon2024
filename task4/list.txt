@@ -1,0 +1,26 @@
+When you find a buffer overflow in legacy code
+Reverse Engineer
+When you decompile the obfuscated code and it makes perfect sense
+Me after a week of reverse engineering
+When your decompiler crashes
+It's not a bug it'a a feature
+Security 'Expert'
+AI
+That's great but can you hack it?
+When your code compiles for the first time
+If it ain't broke break it
+Reading someone else's code
+EDR
+This is fine
+FLARE On
+It's always DNS
+strings.exe
+Don't click on that.
+When you find the perfect 0-day exploit
+Security through obscurity
+Instant Coffee
+H@x0r
+Malware
+$1000000
+IDA Pro
+Security Expert
