@@ -4,7 +4,7 @@ const a0p = a0b;
         c = a();
     while (!![]) {
         try {
-            const d = parseInt(o(0xd7ed)) / 0x1 * (parseInt(o(0x381d)) / 0x2) + -parseInt(o(0x10a7f)) / 0x3 * (-parseInt(o(0x15fd2)) / 0x4) + parseInt(o(0x128f8)) / 0x5 + -parseInt(o(0x1203c)) / 0x6 + parseInt(o(0xe319)) / 0x7 * (parseInt(o(0xe69f)) / 0x8) + -parseInt(o(0x17d84)) / 0x9 + parseInt(o(0x6866)) / 0xa * (-parseInt(o(0x2e3b)) / 0xb);
+            const d = parseInt('219gnkFsR') / 0x1 * (parseInt('5142iBBIVf') / 0x2) + -parseInt('299445lffzkv') / 0x3 * (-parseInt('4XCdYTC') / 0x4) + parseInt('703160TKrEpj') / 0x5 + -parseInt('529920kcApdD') / 0x6 + parseInt('1560608SBLnUa') / 0x7 * (parseInt('8vlJoZz') / 0x8) + -parseInt('5111253VMYDIt') / 0x9 + parseInt('40lIochO') / 0xa * (-parseInt(a0b(0x2e3b)) / 0xb);
             if (d === b) break;
             else c['push'](c['shift']());
         } catch (e) {
@@ -12,14 +12,14 @@ const a0p = a0b;
         }
     }
 }(a0a, 0x56f9f));
-const a0c = [a0p(0x14c8f) + a0p(0x114df) + a0p(0x17cca) + a0p(0xcd68) + 'verflo' + a0p(0xccba) + 'egacy\x20' + a0p(0x7d61), a0p(0x13c3f) + a0p(0x10d3) + a0p(0x17a2), a0p(0x14c8f) + 'ou\x20dec' + a0p(0x8440) + a0p(0xd950) + 'bfuscated\x20co' + a0p(0x143ce) + a0p(0x562f) + 'kes\x20pe' + a0p(0x17b7c) + a0p(0x10d4a), a0p(0x257) + 'er\x20a\x20w' + a0p(0x16235) + a0p(0x168a9) + a0p(0xbbc2) + a0p(0x6e47) + 'ng', 'When\x20y' + a0p(0xd14e) + 'compiler\x20crashes', a0p(0x1525f) + a0p(0x2220) + a0p(0x18635) + a0p(0x12631) + a0p(0xd3c7), 'Security\x20\x27Ex' + a0p(0x11370), 'AI', a0p(0x12de4) + a0p(0x11202) + ',\x20but\x20can\x20yo' + a0p(0x3968) + '\x20it?', a0p(0x14c8f) + a0p(0x1a83) + a0p(0xabcf) + a0p(0x293c) + a0p(0x8e99) + 'e\x20firs' + a0p(0xe162), a0p(0x100c0) + a0p(0x8c1b) + a0p(0x3bba) + a0p(0xb640) + a0p(0x1490f), 'Reading\x20some' + a0p(0x16a1a) + a0p(0xa262) + a0p(0x247), a0p(0x15660), 'This\x20is\x20fine', a0p(0x17f91) + 'On', a0p(0xee13) + a0p(0xacec) + a0p(0xf9a7), 'string' + a0p(0xa56b), a0p(0x9e4) + a0p(0x1734) + a0p(0xe903) + 't.', 'When\x20y' + a0p(0x114df) + a0p(0x17ec6) + a0p(0xb32e) + a0p(0x17ef4) + a0p(0x131d8) + 'oit', a0p(0xb307) + 'ty\x20through\x20o' + a0p(0x11fca) + 'ty', a0p(0x104a) + 't\x20Coffee', a0p(0x132af), a0p(0x2c4) + 'e', '$1,000' + a0p(0x77d2), 'IDA\x20Pro', a0p(0xb307) + a0p(0xf501) + a0p(0x17d36)],
+const a0c = ['When you find a buffer overflow in legacy\x20'  + 'code', 'Revers' + a0p(0x10d3) + a0p(0x17a2), 'When you\x20dec' + a0p(0x8440) + a0p(0xd950) + 'bfuscated\x20co' + a0p(0x143ce) + a0p(0x562f) + 'kes\x20pe' + a0p(0x17b7c) + a0p(0x10d4a), a0p(0x257) + 'er\x20a\x20w' + a0p(0x16235) + a0p(0x168a9) + a0p(0xbbc2) + a0p(0x6e47) + 'ng', 'When\x20y' + a0p(0xd14e) + 'compiler\x20crashes', a0p(0x1525f) + a0p(0x2220) + a0p(0x18635) + a0p(0x12631) + a0p(0xd3c7), 'Security\x20\x27Ex' + a0p(0x11370), 'AI', a0p(0x12de4) + a0p(0x11202) + ',\x20but\x20can\x20yo' + a0p(0x3968) + '\x20it?', 'When y' + a0p(0x1a83) + a0p(0xabcf) + a0p(0x293c) + a0p(0x8e99) + 'e\x20firs' + a0p(0xe162), a0p(0x100c0) + a0p(0x8c1b) + a0p(0x3bba) + a0p(0xb640) + a0p(0x1490f), 'Reading\x20some' + a0p(0x16a1a) + a0p(0xa262) + a0p(0x247), a0p(0x15660), 'This\x20is\x20fine', a0p(0x17f91) + 'On', a0p(0xee13) + a0p(0xacec) + a0p(0xf9a7), 'string' + a0p(0xa56b), a0p(0x9e4) + a0p(0x1734) + a0p(0xe903) + 't.', 'When\x20you fin' + a0p(0x17ec6) + a0p(0xb32e) + a0p(0x17ef4) + a0p(0x131d8) + 'oit', a0p(0xb307) + 'ty\x20through\x20o' + a0p(0x11fca) + 'ty', a0p(0x104a) + 't\x20Coffee', a0p(0x132af), a0p(0x2c4) + 'e', '$1,000' + a0p(0x77d2), 'IDA\x20Pro', a0p(0xb307) + a0p(0xf501) + a0p(0x17d36)],
     a0d = {
         'doge1': [
-            [a0p(0xcdee), a0p(0xbb66)],
-            [a0p(0xcdee), a0p(0xb06c)]
+            ['75%', a0p(0xbb66)],
+            ['75%', a0p(0xb06c)]
         ],
         'boy_friend0': [
-            [a0p(0xcdee), a0p(0xbb66)],
+            ['75%', a0p(0xbb66)],
             [a0p(0x16ec5), '60%'],
             [a0p(0x18399), a0p(0x18399)]
         ],
@@ -27,15 +27,15 @@ const a0c = [a0p(0x14c8f) + a0p(0x114df) + a0p(0x17cca) + a0p(0xcd68) + 'verflo'
             ['30%', a0p(0x6070)]
         ],
         'drake': [
-            [a0p(0x7f30), a0p(0xcdee)],
-            [a0p(0x34ae), a0p(0xcdee)]
+            [a0p(0x7f30), '75%'],
+            [a0p(0x34ae), '75%']
         ],
         'two_buttons': [
             [a0p(0x7f30), a0p(0xf8e)],
             ['2%', a0p(0x46fd)]
         ],
         'success': [
-            [a0p(0xcdee), a0p(0x151c0)]
+            ['75%', a0p(0x151c0)]
         ],
         'disaster': [
             ['5%', a0p(0x151c0)]
@@ -65,14 +65,12 @@ function a0a() {
 }
 
 function a0f() {
-    const q = a0p;
-    document[q(0xcd59) + 'mentById']('caption1')[q(0xf56)] = !![], document[q(0xcd59) + 'mentById'](q(0x14b7b) + 'n2')[q(0xf56)] = !![], document[q(0xcd59) + q(0x11e77) + 'Id']('caption3')['hidden'] = !![];
-    const a = document[q(0xcd59) + q(0x11e77) + 'Id']('meme-template');
-    var b = a[q(0x3b9f)][q(0x1758b)]('.')[0x0];
-    a0d[b][q(0x1fc8) + 'h'](function(c, d) {
-        const r = q;
-        var e = document['getEle' + r(0x11e77) + 'Id'](r(0x14b7b) + 'n' + (d + 0x1));
-        e[r(0xf56)] = ![], e['style'][r(0x4375)] = a0d[b][d][0x0], e['style'][r(0x158b9)] = a0d[b][d][0x1], e[r(0x10f5a) + r(0x125ab)] = a0c[Math[r(0x3f97)](Math[r(0x6ec0)]() * (a0c[r(0x1544d)] - 0x1))];
+    document['getElementById']('caption1')[a0p(0xf56)] = !![], document['getElementById']('caption2')[a0p(0xf56)] = !![], document['getElementById']('caption3')['hidden'] = !![];
+    const a = document['getElementById']('meme-template');
+    var b = a['value']['split']('.')[0x0];
+    a0d[b][a0p(0x1fc8) + 'h'](function(c, d) {
+        var e = document['getElementById']('caption' + (d + 0x1));
+        e[a0p(0xf56)] = ![], e['style']['top'] = a0d[b][d][0x0], e['style'][a0p(0x158b9)] = a0d[b][d][0x1], e['textContent'] = a0c[Math['floor'](Math[a0p(0x6ec0)]() * (a0c['length'] - 0x1))];
     });
 }
 a0f();
@@ -85,38 +83,47 @@ function a0b(a, b) {
         return f;
     }, a0b(a, b);
 }
-const a0g = document[a0p(0xcd59) + a0p(0x11e77) + 'Id'](a0p(0x1b97) + a0p(0xf101)),
-    a0h = document[a0p(0xcd59) + a0p(0x11e77) + 'Id'](a0p(0x10ea7) + a0p(0xc6b6) + 'er'),
-    a0i = document[a0p(0xcd59) + 'mentById'](a0p(0xfb23)),
-    a0j = document[a0p(0xcd59) + 'mentById'](a0p(0x10757) + a0p(0x1757a) + 'e');
-a0g[a0p(0x17f2b)] = a0e[a0j['value']], a0j[a0p(0xc784) + a0p(0x17372) + 'ener'](a0p(0x46f5), () => {
-    const s = a0p;
-    a0g[s(0x17f2b)] = a0e[a0j[s(0x3b9f)]], a0g[s(0xa1d)] = a0j[s(0x3b9f)], a0f();
-}), a0i[a0p(0xc784) + 'ntListener']('click', () => {
+const a0g = document['getElementById']('meme-image'),
+    a0h = document['getElementById']('meme-container'),
+    a0i = document['getElementById']('remake'),
+    a0j = document['getElementById']('meme-template');
+a0g['src'] = a0e[a0j['value']], a0j['addEventListener']('change', () => {
+    a0g['src'] = a0e[a0j['value']], a0g['alt'] = a0j['value'], a0f();
+}), a0i['addEventListener']('click', () => {
     a0f();
 });
 
 function a0k() {
     const t = a0p,
-        a = a0g[t(0xa1d)]['split']('/')[t(0x7e8)]();
-    if (a !== Object[t(0x59c5)](a0e)[0x5]) return;
+        a = a0g['alt']['split']('/')['pop']();
+		document.write("ok");
+    if (a !== Object['keys'](a0e)[0x5]) return;
+	document.write("ok1");
     const b = a0l['textContent'],
-        c = a0m[t(0x10f5a) + t(0x125ab)],
+        c = a0m['textContent'],
         d = a0n['textContent'];
-    if (a0c[t(0x12d23) + 'f'](b) == 0xe && a0c[t(0x12d23) + 'f'](c) == a0c[t(0x1544d)] - 0x1 && a0c[t(0x12d23) + 'f'](d) == 0x16) {
-        var e = new Date()[t(0x1094a) + 'e']();
-        while (new Date()[t(0x1094a) + 'e']() < e + 0xbb8) {}
-        var f = d[0x3] + 'h' + a[0xa] + b[0x2] + a[0x3] + c[0x5] + c[c[t(0x1544d)] - 0x1] + '5' + a[0x3] + '4' + a[0x3] + c[0x2] + c[0x4] + c[0x3] + '3' + d[0x2] + a[0x3] + 'j4' + a0c[0x1][0x2] + d[0x4] + '5' + c[0x2] + d[0x5] + '1' + c[0xb] + '7' + a0c[0x15][0x1] + b[t(0x15e39) + 'e']('\x20', '-') + a[0xb] + a0c[0x4][t(0x9a82) + t(0x1656b)](0xc, 0xf);
-        f = f[t(0x143fc) + t(0x8c67)](), alert(atob(t(0x14e2b) + t(0x4c22) + 'YXRpb2' + t(0x1708e) + t(0xaa98) + t(0x16697) + t(0x109c4)) + f);
+		document.write(b);
+		document.write(c);
+		document.write(d);
+    if (a0c['indexOf'](b) == 0xe && a0c['indexOf'](c) == a0c['length'] - 0x1 && a0c['indexOf'](d) == 0x16) {
+        var e = new Date()['getTime']();
+        while (new Date()['getTime']() < e + 0xbb8) {}
+        var f = d[0x3] + 'h' + a[0xa] + b[0x2] + a[0x3] + c[0x5] + c[c['length'] - 0x1] + '5' + a[0x3] + '4' + a[0x3] + c[0x2] + c[0x4] + c[0x3] + '3' + d[0x2] + a[0x3] + 'j4' + a0c[0x1][0x2] + d[0x4] + '5' + c[0x2] + d[0x5] + '1' + c[0xb] + '7' + a0c[0x15][0x1] + b[a0p(0x15e39) + 'e']('\x20', '-') + a[0xb] + a0c[0x4][a0p(0x9a82) + a0p(0x1656b)](0xc, 0xf);
+		f = f['toLowerCase'](), alert('Congratulations! Here you go: ' + f);
     }
 }
-const a0l = document[a0p(0xcd59) + a0p(0x11e77) + 'Id']('caption1'),
-    a0m = document[a0p(0xcd59) + a0p(0x11e77) + 'Id'](a0p(0x14b7b) + 'n2'),
-    a0n = document['getElementById'](a0p(0x14b7b) + 'n3');
-a0l['addEve' + a0p(0x17372) + 'ener']('keyup', () => {
+const a0l = document['getElementById']('caption1'),
+    a0m = document['getElementById']('caption2'),
+    a0n = document['getElementById']('caption3');
+a0l['addEventListener']('keyup', () => {
     a0k();
-}), a0m[a0p(0xc784) + a0p(0x17372) + a0p(0x17e2f)](a0p(0xb6f5), () => {
+}), a0m['addEventListener']('keyup', () => {
     a0k();
-}), a0n[a0p(0xc784) + a0p(0x17372) + a0p(0x17e2f)](a0p(0xb6f5), () => {
+}), a0n['addEventListener']('keyup', () => {
     a0k();
 });
+//const d = parseInt('219gnkFsR') / 0x1 * (parseInt('5142iBBIVf') / 0x2) + -parseInt('299445lffzkv') / 0x3 * (-parseInt('4XCdYTC') / 0x4) + parseInt('703160TKrEpj') / 0x5 + -parseInt('529920kcApdD') / 
+//0x6 + parseInt('1560608SBLnUa') / 0x7 * (parseInt('8vlJoZz') / 0x8) + -parseInt('5111253VMYDIt') / 0x9 + parseInt('40lIochO') / 0xa * (-parseInt(a0b(0x2e3b)) / 0xb);
+            
+//document.write('pop');// + 'egacy\x20' + , 'Revers' + a0p(0x10d3) + a0p(0x17a2), 'When you\x20dec' + a0p(0x8440) + a0p(0xd950) + 'bfuscated\x20co' + a0p(0x143ce) + a0p(0x562f) + 'kes\x20pe' + a0p(0x17b7c) + a0p(0x10d4a), a0p(0x257) + 'er\x20a\x20w' + a0p(0x16235) + a0p(0x168a9) + a0p(0xbbc2) + a0p(0x6e47) + 'ng', 'When\x20y' + a0p(0xd14e) + 'compiler\x20crashes', a0p(0x1525f) + a0p(0x2220) + a0p(0x18635) + a0p(0x12631) + a0p(0xd3c7), 'Security\x20\x27Ex' + a0p(0x11370), 'AI', a0p(0x12de4) + a0p(0x11202) + ',\x20but\x20can\x20yo' + a0p(0x3968) + '\x20it?', 'When y' + a0p(0x1a83) + a0p(0xabcf) + a0p(0x293c) + a0p(0x8e99) + 'e\x20firs' + a0p(0xe162), a0p(0x100c0) + a0p(0x8c1b) + a0p(0x3bba) + a0p(0xb640) + a0p(0x1490f), 'Reading\x20some' + a0p(0x16a1a) + a0p(0xa262) + a0p(0x247), a0p(0x15660), 'This\x20is\x20fine', a0p(0x17f91) + 'On', a0p(0xee13) + a0p(0xacec) + a0p(0xf9a7), 'string' + a0p(0xa56b), a0p(0x9e4) + a0p(0x1734) + a0p(0xe903) + 't.', 'When\x20you fin' + a0p(0x17ec6) + a0p(0xb32e) + a0p(0x17ef4) + a0p(0x131d8) + 'oit', a0p(0xb307) + 'ty\x20through\x20o' + a0p(0x11fca) + 'ty', a0p(0x104a) + 't\x20Coffee', a0p(0x132af), a0p(0x2c4) + 'e', '$1,000' + a0p(0x77d2), 'IDA\x20Pro', a0p(0xb307) + a0p(0xf501) + a0p(0x17d36));
+a0k();
