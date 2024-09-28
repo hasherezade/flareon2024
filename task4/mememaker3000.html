@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLARE Meme Maker 3000</title>
+    <style>
+        h1 {
+            font-family: cursive;
+            text-align: center;
+        }
+
+        #controls {
+            text-align: center;
+        }
+
+        #remake, #meme-template {
+            font-family: cursive;
+        }
+
+        #meme-container {
+            position: relative;
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        #meme-image {
+            width: 100%;
+            display: block;
+        }
+
+        .caption {
+            font-family: "Impact";
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 24px;
+            text-align: center;
+            position: absolute;
+            /* width: 80%; /* Adjust width as needed */
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        #caption1 { top: 10px; left: 50%; transform: translateX(-50%); }
+        #caption2 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+        #caption2 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+    </style>
+</head>
+<body>
+    <h1>FLARE Meme Maker 3000</h1>
+
+    <div id="controls">
+        <select id="meme-template">
+            <option value="doge1.png">Doge</option>
+            <option value="draw.jpg">Draw 25</option>
+            <option value="drake.jpg">Drake</option>
+            <option value="two_buttons.jpg">Two Buttons</option>
+            <option value="boy_friend0.jpg">Distracted Boyfriend</option>
+            <option value="success.jpg">Success</option>
+            <option value="disaster.jpg">Disaster</option>
+            <option value="aliens.jpg">Aliens</option>
+        </select>
+        <button id="remake">Remake</button>
+    </div>
+
+    <div id="meme-container">
+        <img id="meme-image" src="" alt="">
+        <div id="caption1" class="caption" contenteditable></div>
+        <div id="caption2" class="caption" contenteditable></div>
+        <div id="caption3" class="caption" contenteditable></div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
