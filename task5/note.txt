@@ -111,21 +111,15 @@ Was it a revert done post-exlpoitation?
 [2024-09-28_08:28:15]  liblzma.so.5 -> liblzma.so.5.4.1
 [2024-09-09_23:34:33]  liblzma.so.5.4.1
 
-It turns out that liblzma is modified anyways, and it hooks RSA_public_decrypt
 ---
-Changed done in similar time:
 
-│   │   ├── [2024-09-09_23:21:53]  ssl
-│   │   │   ├── [2024-09-28_08:28:12]  cert.pem -> /etc/ssl/certs/ca-certificates.crt
-│   │   │   ├── [2024-09-28_08:28:12]  certs -> /etc/ssl/certs
-│   │   │   ├── [2024-09-09_23:21:53]  misc
-
-The fake flag was put in the system:
-
-[2024-09-11_22:55:59]  flag.txt
-
+It turns out that liblzma is modified anyways, and it hooks RSA_public_decrypt
 
 https://securelist.com/xz-backdoor-story-part-1/112354/
 
-IP in the coredump:
-172.17.0.2
+---
+The decrypted shellcode connects to "10.0.2.15" on port 1337
+receives: Chacha20 key, nonce, file_name.len, file_name
+reads the file to the buffer, encrypts it with Chacha20 and sends back
+
+No we need to find the relevant data in the coredump and decrypt it...

@@ -27,10 +27,10 @@ def main():
             connection = client_connection
             try:
                 print('connection from', client_address)
-                # Receive the message and send "Hello" back to the client
-                client_connection.sendall(b'01234567890123456789012345678945')
-                print(b'01234567890123456789012345678945')
-                client_connection.sendall(b'123456789012')
+                key_buffer = bytes.fromhex('8DEC9112EB760EDA7C7D87A443271C35D9E0CB878993B4D904AEF934FA2166D7')
+                client_connection.sendall(key_buffer)
+                nonce_buffer = bytes.fromhex('111111111111111111111111')
+                client_connection.sendall(nonce_buffer)
                 byte_buffer = bytes(struct.pack('@I', len(inp_filename)))
                 client_connection.sendall(byte_buffer)
                 byte_buffer = bytearray(inp_filename, 'utf-8')
@@ -43,11 +43,14 @@ def main():
                 with open(out_filename, 'wb') as f:
                     f.write(data)
                 client_connection.close()
+                s.close()
                 print("Saved: " + out_filename)
+                return
             except socket.error:
                 print("Could not connect to the socket. ")
             finally:
                 client_connection.close()
+                return
     finally:
         s.close()
 
