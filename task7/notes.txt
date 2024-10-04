@@ -1,0 +1,19 @@
+Client private key (as BigInt)
+51 57 D8 7E 5E 1B 13 E7 71 92 55 AF A9 79 EF 8B
+
+Block to derive Chacha:
+B4 8F 8F A4 C8 56 D4 96 AC DE CD 16 D9 C9 4C C6
+B0 1A A1 C0 06 5B 02 3B E9 7A FD D1 21 56 F3 DC 
+3F D4 80 97 84 85 D8 18 3C 09 02 03 B6 D3 84 C2
+0E 85 3E 1F 20 F8 8D 1C 5E 0F 86 F1 6E 6C A5 B2
+
+Chacha20 key:
+B4 8F 8F A4 C8 56 D4 96 AC DE CD 16 D9 C9 4C C6 
+B0 1A A1 C0 06 5B 02 3B E9 7A FD D1 21 56 F3 DC
+
+Chacha20 nonce:
+3F D4 80 97 84 85 D8 18
+
+The full comunication is Chacha20 encrypted, with the stream that is initialized just once at the beginning of the communication. 
+
+
