@@ -1,0 +1,5 @@
+First clean the clearlyfake.js script.
+Use website: https://obf-io.deobfuscate.io/
+
+The code of the contract decompiled with:
+https://app.dedaub.com/decompile
