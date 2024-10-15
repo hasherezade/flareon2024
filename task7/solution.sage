@@ -17,7 +17,8 @@ k_y=0x357731edebf0745d081033a668b58aaa51fa0b4fc02cd64c7e8668a016f0ec1317fcac24d8
 
 ec = EllipticCurve(GF(p), [0,0,0,a,b])
 pt_c = ec([c_x, c_y])
-pt_s = ec([s_x, s_y])
+#pt_s = ec([s_x, s_y])
+pt_s = ec([k_x, k_y])
 
 G = pt_c
 n = G.order()
@@ -30,7 +31,7 @@ factors = list(filter(lambda x: int(x[0]^x[1]).bit_length() < 35, factors))
 print("n's factors:", factors)
 PRIVATE_KEY_BIT_SIZE = 128
 import random
-import functools
+
 #private_key = random.randrange(2^PRIVATE_KEY_BIT_SIZE)
 #print(private_key)
 #print(len(Integer(private_key).bits()))
@@ -49,6 +50,7 @@ for p, e in factors:
     if new_order.nbits() >= PRIVATE_KEY_BIT_SIZE:
         print("Found enough factors! The rest are not needed")
         break
+		
 factors = factors[:count_factors_needed]
 print("Considering these factors:", factors)
 print("Calculating discrete log for each quotient group...")
@@ -63,28 +65,37 @@ for p, e in factors:
     k = G0.discrete_log(P0)
     subsolutions.append(k)
     subgroup.append(p ^ e) # k the order of G0
-    
+	
+print("Factors:")
+print(factors)
+print("Subgroup:")
+print(subgroup)
 print("Running CRT...")
-found_key = crt(subsolutions, subgroup)
-print(len(found_key.bits()))
 
-product = functools.reduce(operator.mul, subgroup)
+found_key = crt(subsolutions, subgroup)
+
+print("Partial key:", found_key)
+print("Len: ", len(found_key.bits()))
+
+product = subgroup[0]
+for i in range(1, len(subgroup)):
+	product *= subgroup[i]
 
 print("Brutforcing missing bits...")
 is_found = False
-for m in range(1 << 17):
-	res = found_key + m * product
-	if (res * G == P):
+
+while True:
+	found_key += product
+	if (found_key * G == P):
 		print("Found!")
-		found_key = res
 		is_found = True
 		break
+
 if is_found:
 	#assert private_key == found_key
 	print("Found key:", found_key)
-	print(" ".join("%02x" % b for b in found_key))
+	print(hex(found_key))
 	print("Len: ", len(found_key.bits()))
 	print("success")
 else:
 	print("failed")
-	

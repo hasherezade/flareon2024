@@ -61,14 +61,13 @@ product = functools.reduce(operator.mul, subgroup)
 print(product)
 print("Brutforcing missing bits...")
 
-for m in range(1 << 17):
-	#print(m)
-	res = found_key + m * product
-	#print(res)
-	if (res * G == P):
+while True:
+	found_key += product
+	#print(found_key)
+	if (found_key * G == P):
 		print("Found!")
-		found_key = res
 		break
+		
 assert found_key * G == P
 assert private_key == found_key
 print(found_key)
