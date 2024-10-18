@@ -1,0 +1,832 @@
+res = 38 * 0xef7a8c
+m = 38 * 0x45b53c
+res += 0x9d865d8d
+res -= m
+m = 38 * 0xe4cf8b
+#[ res += 0x18baee57 ;  res ^= 0x19cdf269 ] 
+res -= m
+m = 39 * 0xf5c990
+#[ res -= 0x913fbbde ;  res ^= 0xb1405de2 ] 
+res -= m
+m = 39 * 0x733178
+#[ res += 0x6bfaa656 ;  res ^= 0xffffffffac056a6a ] 
+res ^= m
+m = 39 * 0x9a17b8
+#[ res -= 0x1fe05af5 ;  res ^= 0x61e3db3b ] 
+res ^= m
+m = 39 * 0x773850
+#[ res -= 0xca2804b1 ;  res ^= 0xffffffff5a780571 ] 
+res ^= m
+m = 30 * 0xe21d3d
+#[ res -= 0x49d2a8be ;  res ^= 0x5a6f68be ] 
+res ^= m
+#[ res += 0xd22a726a ;  res ^= 0xde7e92aa ] 
+
+###
+
+res = 39 * 0x99aa81
+m = 39 * 0x4aba22
+res += 0xffffffff8b1215af
+res ^= m
+m = 39 * 0x91a68a
+#[ res += 0x598015bf ;  res ^= 0xffffffffaa80ee43 ] 
+res ^= m
+m = 32 * 0x942fde
+#[ res += 0x23f0824e ;  res ^= 0x6df18e52 ] 
+res ^= m
+m = 39 * 0xfe2fbe
+#[ res += 0x15c825ee ;  res ^= 0x1dc825f6 ] 
+res -= m
+m = 30 * 0xd7e52f
+#[ res += 0xd5682b64 ;  res ^= 0xdbafd4bc ] 
+res -= m
+m = 35 * 0xe44f6a
+#[ res += 0x798bd018 ;  res ^= 0x1998dd018 ] 
+res ^= m
+m = 39 * 0xaf71d6
+#[ res -= 0xe66d523e ;  res ^= 0x1e693f2c6 ] 
+res += m
+#[ res -= 0x4f0368db ;  res ^= 0xff03eb2b ] 
+
+###
+
+res = 39 * 0x48c500
+m = 30 * 0x152887
+res += 0xffffffff70255e44
+res -= m
+m = 39 * 0xaa4247
+#[ res += 0x65f04e48 ;  res ^= 0x9e3051c8 ] 
+res -= m
+m = 39 * 0x38d82d
+#[ res -= 0x3b5e6c69 ;  res ^= 0x3d63ec69 ] 
+res ^= m
+m = 30 * 0xf120ac
+#[ res -= 0x8316b573 ;  res ^= 0x872eca8f ] 
+res ^= m
+m = 33 * 0x254def
+#[ res += 0x803dbdcf ;  res ^= 0x804dc253 ] 
+res += m
+m = 39 * 0x9ef3e7
+#[ res -= 0x6e080cb1 ;  res ^= 0xee380db3 ] 
+res ^= m
+m = 39 * 0x69c573
+#[ res -= 0x6deaa90b ;  res ^= 0x196756f3d ] 
+res += m
+#[ res += 0x142996496 ;  res ^= 0xffffffff45a9e57a ] 
+
+###
+
+res = 39 * 0x67dda4
+m = 30 * 0x5bb860
+res += 0xf4753afc
+res += m
+m = 39 * 0xab0ce5
+#[ res += 0xc05432c9 ;  res ^= 0xc1d47fc9 ] 
+res ^= m
+m = 39 * 0x148e94
+#[ res += 0x544ff977 ;  res ^= 0x3b450069f ] 
+res += m
+m = 39 * 0x9e06ae
+#[ res -= 0x9cb3e419 ;  res ^= 0x3e4d41c19 ] 
+res -= m
+m = 34 * 0xfb9de1
+#[ res -= 0xadc62064 ;  res ^= 0x1724a61ac ] 
+res ^= m
+m = 30 * 0xa8a511
+#[ res -= 0x39f612a9 ;  res ^= 0x4e3633f7 ] 
+res -= m
+m = 39 * 0xd3468d
+#[ res += 0x620a9208 ;  res ^= 0xa61f9208 ] 
+res += m
+#[ res += 0x5af968a6 ;  res ^= 0x6b06a96e ] 
+
+###
+
+res = 39 * 0x640ba9
+m = 38 * 0xf1d9e5
+res += 0x516c7a5c
+res -= m
+m = 30 * 0xd3e2f8
+#[ res += 0x8b424d6b ;  res ^= 0x8cc6deb5 ] 
+res += m
+m = 38 * 0xb558ce
+#[ res += 0x3802be78 ;  res ^= 0x1f8034798 ] 
+res += m
+m = 39 * 0x2f03a7
+#[ res -= 0x33418c8e ;  res ^= 0x57429392 ] 
+res -= m
+m = 39 * 0xb8fa61
+#[ res += 0xe0308f50 ;  res ^= 0xe050b170 ] 
+res += m
+m = 39 * 0xe0c507
+#[ res -= 0x23e1312 ;  res ^= 0x1fc22df6 ] 
+res -= m
+m = 38 * 0x8e354e
+#[ res -= 0xd7ef522f ;  res ^= 0xd8376e57 ] 
+res += m
+#[ res -= 0x1d3b2c188 ;  res ^= 0xfffffffe73b2c1f8 ] 
+
+###
+
+res = 39 * 0xa9b448
+m = 39 * 0x906550
+res += 0x94917c89
+res += m
+m = 39 * 0xaa5ad2
+#[ res += 0x407021af ;  res ^= 0x1c0707e71 ] 
+res ^= m
+m = 30 * 0xc49349
+#[ res += 0x9b180a3 ;  res ^= 0x77cf83a7 ] 
+res ^= m
+m = 39 * 0x314f8e
+#[ res -= 0xf9ef4a3 ;  res ^= 0x3067f4e7 ] 
+res += m
+m = 39 * 0x81968b
+#[ res += 0xcd975f3b ;  res ^= 0x35399a13b ] 
+res ^= m
+m = 35 * 0x5ffbac
+#[ res += 0x893d2e0b ;  res ^= 0x9945561b ] 
+res -= m
+m = 32 * 0xf63c8e
+#[ res -= 0x2ecc8e2a ;  res ^= 0xf3378e3a ] 
+res -= m
+#[ res -= 0x2aa7c3cb8 ;  res ^= 0xfffffffdaabc5d48 ] 
+
+###
+
+res = 39 * 0xa6edf9
+m = 39 * 0xe87bf4
+res += 0x2dc47ff5
+res -= m
+m = 33 * 0x19864d
+#[ res -= 0x999bd740 ;  res ^= 0xffffffff9abbe8c0 ] 
+res -= m
+m = 39 * 0x901524
+#[ res -= 0x41884bed ;  res ^= 0xbe8bb4f5 ] 
+res += m
+m = 39 * 0xc897cc
+#[ res += 0x1c768f75 ;  res ^= 0x247bf095 ] 
+res ^= m
+m = 39 * 0x731197
+#[ res += 0x604ed258 ;  res ^= 0xeff7eea8 ] 
+res ^= m
+m = 30 * 0x5f591c
+#[ res += 0x67a0d262 ;  res ^= 0xffffffffa8e3d6e2 ] 
+res += m
+m = 30 * 0x579d0e
+#[ res += 0x316661f9 ;  res ^= 0x579a6609 ] 
+res += m
+#[ res -= 0xc4356e67 ;  res ^= 0xffffffffc5cf9ea7 ] 
+
+###
+
+res = 39 * 0x9afaf6
+m = 39 * 0x7d1a12
+res += 0xd686d40f
+res += m
+m = 39 * 0x4d84b1
+#[ res -= 0xc679fc44 ;  res ^= 0x15a8a0444 ] 
+res += m
+m = 39 * 0x552b78
+#[ res += 0xa30387dc ;  res ^= 0x15d038824 ] 
+res -= m
+m = 39 * 0xf372a1
+#[ res -= 0xd4c64da2 ;  res ^= 0xf54a725e ] 
+res ^= m
+m = 30 * 0xb40eb5
+#[ res -= 0x4c5103ad ;  res ^= 0xffffffffccb30c5d ] 
+res += m
+m = 34 * 0x9e5c18
+#[ res += 0x1295cf4e ;  res ^= 0x16fa70d2 ] 
+res ^= m
+m = 30 * 0xf2513b
+#[ res += 0x38784353 ;  res ^= 0x59b87cf3 ] 
+res ^= m
+#[ res -= 0x5fdada18 ;  res ^= 0xffffffffa065da18 ] 
+
+###
+
+res = 30 * 0xac70b9
+m = 38 * 0xc42b6f
+res += 0xdae0a932
+res ^= m
+m = 38 * 0x867193
+#[ res -= 0x63fcefc4 ;  res ^= 0xbc03104c ] 
+res -= m
+m = 39 * 0x6d31fe
+#[ res += 0xdc48c63a ;  res ^= 0x17cc9ca46 ] 
+res -= m
+m = 39 * 0xaaae58
+#[ res += 0x4b527650 ;  res ^= 0x4baeb6d0 ] 
+res -= m
+m = 39 * 0x9faa7a
+#[ res -= 0xcd7121f8 ;  res ^= 0x1558f6608 ] 
+res += m
+m = 38 * 0x354ac6
+#[ res += 0xbe0a2c9c ;  res ^= 0x1c23a6ca4 ] 
+res += m
+m = 39 * 0x3f2acb
+#[ res += 0x27931771 ;  res ^= 0xd8ad17f1 ] 
+res -= m
+#[ res -= 0x2ef2cb51c ;  res ^= 0xfffffffff0f4bb1c ] 
+
+###
+
+res = 30 * 0xe9d18a
+m = 35 * 0x8aa5b9
+res += 0xb4aad42a
+res ^= m
+m = 39 * 0x241997
+#[ res -= 0x8f225906 ;  res ^= 0x9125a906 ] 
+res -= m
+m = 39 * 0xe3da0f
+#[ res += 0x6e46fcb8 ;  res ^= 0xb65b07f8 ] 
+res += m
+m = 39 * 0xa5f9eb
+#[ res += 0x442800ec ;  res ^= 0x4c381f2c ] 
+res += m
+m = 39 * 0xd6e0fb
+#[ res += 0xbde8f9af ;  res ^= 0x3423b1a6f ] 
+res += m
+m = 32 * 0x8dc36e
+#[ res -= 0xc9d97243 ;  res ^= 0x3cffb92bd ] 
+res += m
+m = 39 * 0xb072ee
+#[ res += 0xc54b7d21 ;  res ^= 0x3dacdfd67 ] 
+res ^= m
+#[ res -= 0x2e93af59c ;  res ^= 0xfffffffd394f1ea4 ] 
+
+###
+
+res = 30 * 0xd14f3e
+m = 30 * 0xc5ecbf
+res += 0x60141f5b
+res -= m
+m = 39 * 0x19ff9c
+#[ res += 0xb197c5c0 ;  res ^= 0x171f8cbc0 ] 
+res ^= m
+m = 33 * 0xe3288b
+#[ res += 0x5ad8afe4 ;  res ^= 0x66e7d06c ] 
+res += m
+m = 39 * 0xcfb18c
+#[ res -= 0x7f933d23 ;  res ^= 0x80af4325 ] 
+res ^= m
+m = 39 * 0xd208e5
+#[ res -= 0xe13c8393 ;  res ^= 0x17fc483b7 ] 
+res ^= m
+m = 39 * 0x42240f
+#[ res += 0xf96d2b51 ;  res ^= 0x13a933caf ] 
+res += m
+m = 39 * 0x1c6098
+#[ res -= 0x8732273d ;  res ^= 0x18b722b4d ] 
+res -= m
+#[ res -= 0xdf11dab5 ;  res ^= 0xffffffff21122dcf ] 
+
+###
+
+res = 39 * 0x3768cc
+m = 34 * 0x43be16
+res += 0x949ec09
+res -= m
+m = 39 * 0xb7cca5
+#[ res += 0x566cc6a8 ;  res ^= 0x5997cf58 ] 
+res ^= m
+m = 30 * 0xf6419f
+#[ res += 0x6db0599e ;  res ^= 0x92f1afae ] 
+res += m
+m = 39 * 0xae52fc
+#[ res += 0x9d5ef538 ;  res ^= 0xbd613538 ] 
+res ^= m
+m = 39 * 0x5eeb81
+#[ res += 0x717a44dd ;  res ^= 0x739fdfdd ] 
+res -= m
+m = 39 * 0xec1845
+#[ res += 0xdd02182d ;  res ^= 0x327061835 ] 
+res ^= m
+m = 30 * 0x61a3be
+#[ res -= 0xdc89d3f6 ;  res ^= 0xef8e5416 ] 
+res += m
+#[ res -= 0x1f43611bb ;  res ^= 0x21c4e16c5 ] 
+
+###
+
+res = 39 * 0x336e91
+m = 38 * 0xd45de9
+res += 0xa1eb20e3
+res -= m
+m = 39 * 0x76c8f8
+#[ res -= 0x381ac71a ;  res ^= 0x3825592e ] 
+res += m
+m = 39 * 0x945339
+#[ res += 0x5846624d ;  res ^= 0xd8caa2cd ] 
+res -= m
+m = 39 * 0x4474ec
+#[ res += 0x524d7efa ;  res ^= 0x724d8306 ] 
+res += m
+m = 38 * 0x51054f
+#[ res -= 0xe47e82cd ;  res ^= 0xef8285d3 ] 
+res ^= m
+m = 38 * 0xd7eb3b
+#[ res += 0x32e1c86f ;  res ^= 0x3321c9b1 ] 
+res -= m
+m = 30 * 0xad52e1
+#[ res += 0x36f6829d ;  res ^= 0x390e8f65 ] 
+res -= m
+#[ res += 0x60c2c3d3 ;  res ^= 0x61455c55 ] 
+
+###
+
+res = 30 * 0x725059
+m = 39 * 0x6dcfe7
+res += 0xa86a7f2b
+res += m
+m = 32 * 0x8f4c44
+#[ res -= 0x22dbdb7a ;  res ^= 0x653c249a ] 
+res += m
+m = 39 * 0xd2f4ce
+#[ res -= 0x27e8517b ;  res ^= 0x68e87685 ] 
+res -= m
+m = 39 * 0xe99d3f
+#[ res -= 0x87238dc5 ;  res ^= 0xffffffff89e49245 ] 
+res ^= m
+m = 39 * 0xada536
+#[ res += 0xed16797a ;  res ^= 0xffffffff77ee7a8a ] 
+res += m
+m = 35 * 0xe0b352
+#[ res -= 0x95a05aa9 ;  res ^= 0x9aa0ada9 ] 
+res -= m
+m = 39 * 0x8675b6
+#[ res += 0x41c00020 ;  res ^= 0x43c00020 ] 
+res += m
+#[ res += 0x14892795 ;  res ^= 0xfdf9d895 ] 
+
+###
+
+res = 33 * 0x4a5e95
+m = 39 * 0x3a7b49
+res += 0x5ed7a1f1
+res += m
+m = 39 * 0xf27038
+#[ res += 0x82571310 ;  res ^= 0x87a91310 ] 
+res -= m
+m = 30 * 0xa187d0
+#[ res -= 0x95c9f719 ;  res ^= 0xf64a0f19 ] 
+res += m
+m = 39 * 0xfc991a
+#[ res -= 0xbbcc735d ;  res ^= 0xffffffffdc349363 ] 
+res -= m
+m = 30 * 0x4e947a
+#[ res += 0x4724307d ;  res ^= 0xf9ddd08f ] 
+res -= m
+m = 39 * 0x324ead
+#[ res -= 0x59a9172e ;  res ^= 0xa9d9697e ] 
+res ^= m
+m = 39 * 0x656b1b
+#[ res -= 0x969a7a64 ;  res ^= 0x1ab7efbe4 ] 
+res -= m
+#[ res += 0x2ca35df7c ;  res ^= 0xffffffffcdca2084 ] 
+
+###
+
+res = 39 * 0x251b86
+m = 39 * 0x743927
+res += 0xa751192c
+res -= m
+m = 30 * 0x9a3479
+#[ res -= 0x27d12643 ;  res ^= 0xf851da43 ] 
+res ^= m
+m = 34 * 0x778a0d
+#[ res -= 0x2eb0819b ;  res ^= 0x335087a5 ] 
+res ^= m
+m = 30 * 0x7e04b5
+#[ res -= 0x4824d02f ;  res ^= 0x4bfd30d3 ] 
+res -= m
+m = 39 * 0xf1c3ee
+#[ res -= 0x5d540495 ;  res ^= 0x66b4056f ] 
+res ^= m
+m = 39 * 0x883b8a
+#[ res += 0x460c48a6 ;  res ^= 0x4617c8aa ] 
+res += m
+m = 39 * 0x993db1
+#[ res += 0x7b2ffbdc ;  res ^= 0x8530043c ] 
+res += m
+#[ res -= 0x1787d53da ;  res ^= 0xffffffff98bed466 ] 
+
+###
+
+res = 39 * 0xbae081
+m = 38 * 0xc2483b
+res += 0x2359766f
+res ^= m
+m = 30 * 0x520ee2
+#[ res += 0xea986a57 ;  res ^= 0x137a995d7 ] 
+res -= m
+m = 39 * 0x9864ba
+#[ res += 0xa57f7eec ;  res ^= 0xa6ff8114 ] 
+res += m
+m = 38 * 0x7cd278
+#[ res += 0x42833507 ;  res ^= 0x429fcd19 ] 
+res -= m
+m = 38 * 0xbe6605
+#[ res -= 0x29fad80f ;  res ^= 0x360be811 ] 
+res ^= m
+m = 39 * 0x3bd2e8
+#[ res -= 0x4c927a8d ;  res ^= 0x3ccf29a8d ] 
+res += m
+m = 39 * 0x548c2b
+#[ res += 0xb790cfd3 ;  res ^= 0x358915033 ] 
+res -= m
+#[ res -= 0x1f72482c6 ;  res ^= 0x20b6c874a ] 
+
+###
+
+res = 39 * 0xfb213b
+m = 39 * 0xde6876
+res += 0xffffffff988c29bd
+res ^= m
+m = 30 * 0x629ff7
+#[ res -= 0x7a399d61 ;  res ^= 0x8649fde3 ] 
+res ^= m
+m = 35 * 0xdbb107
+#[ res += 0x5f61ae01 ;  res ^= 0xa0eeb203 ] 
+res -= m
+m = 32 * 0x262675
+#[ res -= 0x74a616e2 ;  res ^= 0x94aa6b62 ] 
+res -= m
+m = 39 * 0xd691c5
+#[ res -= 0xdfcf5488 ;  res ^= 0x16050dcb8 ] 
+res += m
+m = 39 * 0xcafc93
+#[ res -= 0x5b3ee746 ;  res ^= 0x5bc728ca ] 
+res -= m
+m = 39 * 0x81f945
+#[ res -= 0x111bde22 ;  res ^= 0x12e46222 ] 
+res -= m
+#[ res += 0x20cb2ed29 ;  res ^= 0x214cd1f59 ] 
+
+###
+
+res = 39 * 0x52f44d
+m = 30 * 0xe6e66e
+res += 0xf53509c
+res ^= m
+m = 39 * 0xf98017
+#[ res -= 0x275d79b0 ;  res ^= 0xffffffffe9a386d0 ] 
+res -= m
+m = 39 * 0x34fcb0
+#[ res += 0x43666bfd ;  res ^= 0x456e6c1d ] 
+res -= m
+m = 33 * 0x4d8ba9
+#[ res -= 0x17d073d8 ;  res ^= 0x28709cd8 ] 
+res ^= m
+m = 39 * 0x6c7e92
+#[ res += 0xb5482f53 ;  res ^= 0xffffffffbd5bf153 ] 
+res ^= m
+m = 39 * 0xa4711e
+#[ res += 0x2af1d741 ;  res ^= 0xed0e28c3 ] 
+res += m
+m = 30 * 0x33d374
+#[ res -= 0x1ee266d2 ;  res ^= 0x22e79af6 ] 
+res += m
+#[ res -= 0xa4f83f9c ;  res ^= 0xffffffff6d08c1e4 ] 
+
+###
+
+res = 30 * 0x65ac37
+m = 30 * 0xc6dde0
+res += 0x15e586b0
+res ^= m
+m = 39 * 0x154abd
+#[ res += 0x212c36d4 ;  res ^= 0x2354cad4 ] 
+res ^= m
+m = 39 * 0xa5e467
+#[ res += 0xaa5b3453 ;  res ^= 0xfee57fd5 ] 
+res ^= m
+m = 39 * 0xb6bed6
+#[ res += 0x315624ef ;  res ^= 0x1d1ea2511 ] 
+res ^= m
+m = 39 * 0x832ae7
+#[ res -= 0x5285b0a5 ;  res ^= 0x1bf85ffeb ] 
+res -= m
+m = 39 * 0xc46330
+#[ res += 0xe961bedd ;  res ^= 0x11be6c32d ] 
+res += m
+m = 34 * 0x3f8467
+#[ res -= 0x4a9e1d65 ;  res ^= 0xcdae3fa5 ] 
+res ^= m
+#[ res -= 0x85b4d65d ;  res ^= 0x186556aa3 ] 
+
+###
+
+res = 38 * 0xb74a52
+m = 38 * 0xf22ecd
+res += 0x83345328
+res ^= m
+m = 39 * 0xbef4be
+#[ res -= 0x34cbf23b ;  res ^= 0xf55c1e45 ] 
+res += m
+m = 39 * 0x7fe215
+#[ res += 0x605ac076 ;  res ^= 0x60a6c39a ] 
+res ^= m
+m = 39 * 0xdb9f48
+#[ res += 0xb14a7317 ;  res ^= 0x1734bb31f ] 
+res -= m
+m = 30 * 0xbb4276
+#[ res -= 0xbca905f2 ;  res ^= 0x1c77f0bf2 ] 
+res -= m
+m = 38 * 0xa3fbef
+#[ res -= 0x920e2248 ;  res ^= 0xffffffff720fde78 ] 
+res ^= m
+m = 39 * 0xc5e883
+#[ res += 0x4c22d2d3 ;  res ^= 0xfffffffffc5d5775 ] 
+res ^= m
+#[ res += 0x76bc66f1 ;  res ^= 0x895ca70f ] 
+
+###
+
+res = 39 * 0x4b2d02
+m = 39 * 0x84bb2c
+res += 0x4b27b6d6
+res -= m
+m = 35 * 0x6f2d21
+#[ res += 0x3e2b5ad4 ;  res ^= 0x42d5652c ] 
+res ^= m
+m = 30 * 0x5fe38f
+#[ res += 0x1020133a ;  res ^= 0x10206d3a ] 
+res += m
+m = 39 * 0xea20a5
+#[ res -= 0x62807b20 ;  res ^= 0xa6807be0 ] 
+res += m
+m = 39 * 0x5c17aa
+#[ res -= 0x200b6b65 ;  res ^= 0x60779ceb ] 
+res ^= m
+m = 39 * 0xb9feb0
+#[ res += 0x5617a13 ;  res ^= 0x1aaf8a2d ] 
+res -= m
+m = 32 * 0x782f79
+#[ res -= 0xadbe02fb ;  res ^= 0xffffffff5e5e3d05 ] 
+res -= m
+#[ res += 0xe7b16cc4 ;  res ^= 0xffffffff685e9f44 ] 
+
+###
+
+res = 39 * 0x608d19
+m = 39 * 0xbe18f4
+res += 0xffffffffd1119d14
+res -= m
+m = 30 * 0x88dec9
+#[ res -= 0xb7ea972e ;  res ^= 0xb86f9b72 ] 
+res ^= m
+m = 39 * 0xb68150
+#[ res += 0xaf5cd797 ;  res ^= 0xd0acd8b9 ] 
+res ^= m
+m = 39 * 0x4d166c
+#[ res -= 0x3d073ba5 ;  res ^= 0x4d18cfaf ] 
+res += m
+m = 33 * 0x495e3f
+#[ res += 0xbb1e1039 ;  res ^= 0xffffffffcf21f0fb ] 
+res -= m
+m = 39 * 0x5caba1
+#[ res += 0xe727b98e ;  res ^= 0x12b27b996 ] 
+res -= m
+m = 30 * 0x183a4d
+#[ res -= 0x1a3cf6c1 ;  res ^= 0x27fd0ac3 ] 
+res += m
+#[ res -= 0x130883afe ;  res ^= 0xfffffffed1883d02 ] 
+
+###
+
+res = 39 * 0xffd0ca
+m = 39 * 0xbf2b59
+res += 0xffffffff70d93118
+res ^= m
+m = 39 * 0x29df01
+#[ res += 0xc76bad6e ;  res ^= 0xffffffffc997bef2 ] 
+res += m
+m = 30 * 0xbbda1d
+#[ res += 0xeef034a2 ;  res ^= 0x11710cf66 ] 
+res ^= m
+m = 30 * 0x5d24a5
+#[ res += 0x5923194e ;  res ^= 0xd963e7b6 ] 
+res -= m
+m = 39 * 0x3dc505
+#[ res -= 0x81100799 ;  res ^= 0x81301b9b ] 
+res += m
+m = 39 * 0x4e25a6
+#[ res -= 0x69baee91 ;  res ^= 0x1fe471193 ] 
+res ^= m
+m = 34 * 0xae1920
+#[ res += 0x2468b30a ;  res ^= 0x1dba9537e ] 
+res -= m
+#[ res -= 0x288cf8f4d ;  res ^= 0xfffffffe8f5191bd ] 
+
+###
+
+res = 38 * 0xf56c62
+m = 39 * 0x615605
+res += 0x2422f4c1
+res += m
+m = 39 * 0x828456
+#[ res += 0x5b52f6ee ;  res ^= 0xa5af1972 ] 
+res += m
+m = 30 * 0x50484b
+#[ res -= 0x5efc9727 ;  res ^= 0x6f059759 ] 
+res -= m
+m = 39 * 0x89d640
+#[ res += 0x84e222af ;  res ^= 0x876e26f1 ] 
+res ^= m
+m = 38 * 0xe4b191
+#[ res += 0xfd21345b ;  res ^= 0x13d23346f ] 
+res -= m
+m = 38 * 0x8c58c1
+#[ res += 0xfe15a789 ;  res ^= 0x3021a69fb ] 
+res ^= m
+m = 39 * 0xa13c4c
+#[ res += 0x44390863 ;  res ^= 0x4c49099f ] 
+res += m
+#[ res -= 0x2e7d3c295 ;  res ^= 0x3287cc5f5 ] 
+
+###
+
+res = 32 * 0x73aaf0
+m = 30 * 0xf61e43
+res += 0xa041f331
+res += m
+m = 35 * 0x8cb5f0
+#[ res += 0xd09b66f3 ;  res ^= 0x151656b35 ] 
+res += m
+m = 39 * 0x4f53a8
+#[ res += 0xc11c9b4b ;  res ^= 0x34164bbcb ] 
+res ^= m
+m = 39 * 0xb2e1fa
+#[ res -= 0x6465672e ;  res ^= 0x9c7aa75e ] 
+res += m
+m = 39 * 0xb8b7b3
+#[ res -= 0x13c072a8 ;  res ^= 0x77c07fd8 ] 
+res -= m
+m = 39 * 0x13b807
+#[ res -= 0x882c1521 ;  res ^= 0x3882c155f ] 
+res += m
+m = 39 * 0xdd40c4
+#[ res += 0x6b84d0be ;  res ^= 0x758dd142 ] 
+res ^= m
+#[ res -= 0x1f4f56022 ;  res ^= 0xfffffffe0cfae02e ] 
+
+###
+
+res = 39 * 0xca894b
+m = 39 * 0x11552b
+res += 0xa34fe406
+res += m
+m = 39 * 0x7dc36b
+#[ res += 0x3764ecd4 ;  res ^= 0x1dfed356c ] 
+res ^= m
+m = 30 * 0xcec5a6
+#[ res += 0xb45e777b ;  res ^= 0xdba1889d ] 
+res ^= m
+m = 30 * 0xb6e30d
+#[ res -= 0x23387bf3 ;  res ^= 0x2d59bc15 ] 
+res += m
+m = 39 * 0x859c14
+#[ res -= 0xd6796884 ;  res ^= 0xfab9788c ] 
+res ^= m
+m = 39 * 0xd178d3
+#[ res += 0x41868e54 ;  res ^= 0x5eb992b4 ] 
+res += m
+m = 33 * 0x61645c
+#[ res += 0x958b0be3 ;  res ^= 0x36b8b74e7 ] 
+res ^= m
+#[ res -= 0x3ddb80073 ;  res ^= 0xfffffffc2dd8018f ] 
+
+###
+
+res = 30 * 0x7239e9
+m = 34 * 0xf1c3d1
+res += 0xffffffff89f1a526
+res -= m
+m = 39 * 0x1b1367
+#[ res -= 0xef28a068 ;  res ^= 0x11158a398 ] 
+res ^= m
+m = 39 * 0x8038b3
+#[ res -= 0x302002c6 ;  res ^= 0x31e00d5a ] 
+res ^= m
+m = 30 * 0x65fac9
+#[ res += 0xb5163447 ;  res ^= 0x15df9d44f ] 
+res += m
+m = 39 * 0xd845ca
+#[ res += 0xe04a889a ;  res ^= 0xe05a89ae ] 
+res -= m
+m = 39 * 0xb2bbbc
+#[ res -= 0xab7d1c58 ;  res ^= 0xed82e5f8 ] 
+res += m
+m = 39 * 0x33c8bd
+#[ res += 0x2a00f48e ;  res ^= 0x3a017b92 ] 
+res ^= m
+#[ res += 0xa31b6a50 ;  res ^= 0xffffffff632b7e50 ] 
+
+###
+
+res = 38 * 0x53a4e0
+m = 39 * 0x9bbfda
+res += 0xffffffff9f9e7fc2
+res -= m
+m = 38 * 0x6b38aa
+#[ res += 0x69b383f1 ;  res ^= 0x77cc8411 ] 
+res -= m
+m = 39 * 0x5d266f
+#[ res -= 0x971317a0 ;  res ^= 0xab1317a0 ] 
+res += m
+m = 39 * 0xedc3d3
+#[ res += 0x5a4b0e60 ;  res ^= 0xe6571260 ] 
+res -= m
+m = 38 * 0xb1f16c
+#[ res -= 0x6d1b69f2 ;  res ^= 0x93e59af6 ] 
+res -= m
+m = 39 * 0x1c8e5b
+#[ res -= 0xd7ce9999 ;  res ^= 0xe8d2b9a9 ] 
+res += m
+m = 30 * 0x78f67b
+#[ res -= 0x68839283 ;  res ^= 0x3a987f287 ] 
+res += m
+#[ res += 0xbc17051a ;  res ^= 0x344770b2e ] 
+
+###
+
+res = 39 * 0x87184c
+m = 35 * 0xf6372e
+res += 0xffffffff8d5ea528
+res ^= m
+m = 39 * 0xd7355c
+#[ res += 0x16ad4f89 ;  res ^= 0x29bdd089 ] 
+res -= m
+m = 39 * 0x471dc1
+#[ res -= 0xbb20fe35 ;  res ^= 0x1456702f5 ] 
+res ^= m
+m = 32 * 0x8c4d98
+#[ res -= 0x2d2b752c ;  res ^= 0x572c95f4 ] 
+res -= m
+m = 39 * 0x5ceea1
+#[ res -= 0x94650c74 ;  res ^= 0x36c6d14f4 ] 
+res -= m
+m = 30 * 0xeb0863
+#[ res -= 0xaaff23bf ;  res ^= 0xf703dcc1 ] 
+res -= m
+m = 39 * 0xb6227f
+#[ res += 0xad3bc09d ;  res ^= 0xadc440a3 ] 
+res ^= m
+#[ res += 0x87f314d1 ;  res ^= 0x3880d152f ] 
+
+###
+
+res = 30 * 0x8c6412
+m = 39 * 0xb253c4
+res += 0xc08c321c
+res ^= m
+m = 33 * 0x8f0579
+#[ res += 0x21bb1147 ;  res ^= 0x1e24f36c7 ] 
+res += m
+m = 39 * 0x7ac48a
+#[ res -= 0xfa691186 ;  res ^= 0x17a99168e ] 
+res -= m
+m = 39 * 0x2737e6
+#[ res += 0xbb787dd5 ;  res ^= 0xc4b98235 ] 
+res += m
+m = 39 * 0x4363b9
+#[ res -= 0xa174a97f ;  res ^= 0xa2bb7683 ] 
+res -= m
+m = 39 * 0xb38449
+#[ res += 0x77c42ed8 ;  res ^= 0x88c45378 ] 
+res ^= m
+m = 30 * 0x6e1316
+#[ res -= 0x209dc078 ;  res ^= 0xe09e4198 ] 
+res += m
+#[ res -= 0xd025b63e ;  res ^= 0xffffffff30dacbc2 ] 
+
+###
+
+res = 39 * 0x390b78
+m = 39 * 0x70e6c8
+res += 0x7d5deea4
+res -= m
+m = 30 * 0xd8a292
+#[ res -= 0x6ea339e2 ;  res ^= 0x72a4c626 ] 
+res ^= m
+m = 39 * 0x978c71
+#[ res -= 0x288d6ec5 ;  res ^= 0x2893915f ] 
+res -= m
+m = 30 * 0x9a14d4
+#[ res -= 0xe5d85ed8 ;  res ^= 0x11a386168 ] 
+res += m
+m = 39 * 0x995144
+#[ res -= 0xb69670cc ;  res ^= 0x1776a714c ] 
+res ^= m
+m = 39 * 0x811c39
+#[ res -= 0xd2e77342 ;  res ^= 0x32d288d46 ] 
+res ^= m
+m = 34 * 0x9953d7
+#[ res -= 0x2dd03565 ;  res ^= 0x36304abd ] 
+res ^= m
+#[ res += 0x2873731f1 ;  res ^= 0x2bbc951f1 ] 
+
+###
+
