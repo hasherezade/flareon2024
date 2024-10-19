@@ -383,7 +383,28 @@ res_11 ^= 0xef8e5416
 res_11 += x_31  * 0x61a3be
 res_11 ^= 0x9288d4fa
 res_11 += 0x7e4241fb
+
 s.add(res_11 == 0)
+##
+res_12 = x_16  * 0x336e91
+res_12 += 0xa1eb20e3
+res_12 -= x_4  * 0xd45de9
+res_12 += 0xc7e538e6
+res_12 += x_8  * 0x76c8f8
+res_12 ^= 0xd8caa2cd
+res_12 -= x_20  * 0x945339
+res_12 += 0x524d7efa
+res_12 += x_12  * 0x4474ec
+res_12 += 0x1b817d33
+res_12 ^= x_0  * 0x51054f
+res_12 ^= 0x3321c9b1
+res_12 -= x_24  * 0xd7eb3b
+res_12 += 0x36f6829d
+res_12 -= x_28  * 0xad52e1
+res_12 ^= 0x6ce2181a
+res_12 += 0xc64bbbd
+
+s.add(res_12 == 0)
 ##
 
 res_13 = x_29  * 0x725059
