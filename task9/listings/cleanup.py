@@ -40,7 +40,14 @@ def print_constraints(needed):
 
 def process_res(line, num):
     print(line.replace("res", "res_" + str(num)))
-    
+
+def replace_m_val(line, stored_m):
+	pos1 = stored_m.find('=')
+	m_val = stored_m[pos1+1:]
+	pos2 = line.find('= m')
+	line.replace('m',m_val)
+	return line
+  
 def main():
     global g_code_buffer
     
@@ -62,6 +69,7 @@ def main():
     only_clean = set()
     args = set()
     count = 0
+    stored_m = ""
     for i in range(len(lines1)):
         line = lines1[i]
         if line.find("##") != (-1):
@@ -70,14 +78,23 @@ def main():
                 process_res("s.add(res == 0)", count)
                 print("")
                 #print_constraints(args)
-                print(args)
+                #print(args)
                 only_clean.update(args)
             args.clear()
             count +=1
             is_clean = True
         val = parse_name(line)
+        
         if val is not None:
-            args.add(val)
+       		args.add(val)
+        if line.startswith("m = "):
+       		pos1 = line.find('=')
+       		stored_m = line[pos1+1:].strip()
+       		continue
+       		
+       	if line.find("= m"):
+       		line = line.replace('m', stored_m)
+       	
         if line.startswith("#"):
             common = find_common(lines1[i] , lines2[i])
             if common is None:
@@ -89,6 +106,7 @@ def main():
             process_res(line, count)
     print(only_clean)
     #print_constraints(only_clean)
+    
 if __name__ == "__main__":
     sys.exit(main())
     
