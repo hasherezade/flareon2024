@@ -596,7 +596,9 @@ res_22 += 0xcf77c502
 
 s.add(res_22 == 0)
 
+
 ##
+
 
 res_25 = x_1  * 0x73aaf0
 res_25 ^= 0xa04e34f1
@@ -722,6 +724,27 @@ res_30 += 0x2fda49c2
 
 s.add(res_30 == 0)
 
+##
+
+res_31 = x_19  * 0x390b78
+res_31 += 0x7d5deea4
+res_31 -= x_15  * 0x70e6c8
+res_31 += 0x915cc61e
+res_31 ^= x_27  * 0xd8a292
+res_31 += 0xd772913b
+res_31 -= x_23  * 0x978c71
+res_31 += 0x1a27a128
+res_31 += x_31  * 0x9a14d4
+res_31 += 0x49698f34
+res_31 ^= x_7  * 0x995144
+res_31 += 0x2d188cbe
+res_31 ^= x_11  * 0x811c39
+res_31 += 0xd22fca9b
+res_31 ^= x_3  * 0x9953d7
+res_31 ^= 0x877669
+res_31 += 0x86bddb88
+
+s.add(res_31 == 0)
 ##
 
 print(s)
