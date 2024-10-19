@@ -533,6 +533,29 @@ s.add(res_18 == 0)
 
 ##
 
+##
+
+res_20 = x_24  * 0xb74a52
+res_20 ^= 0x8354d4e8
+res_20 ^= x_4  * 0xf22ecd
+res_20 += 0xcb340dc5
+res_20 += x_20  * 0xbef4be
+res_20 ^= 0x60a6c39a
+res_20 ^= x_8  * 0x7fe215
+res_20 += 0xb14a7317
+res_20 -= x_16  * 0xdb9f48
+res_20 += 0x4356fa0e
+res_20 -= x_28  * 0xbb4276
+res_20 += 0x6df1ddb8
+res_20 ^= x_0  * 0xa3fbef
+res_20 += 0x4c22d2d3
+res_20 ^= x_12  * 0xc5e883
+res_20 ^= 0x50a6e5c9
+res_20 += 0x271a423a
+
+s.add(res_20 == 0)
+##
+
 res_21 = x_13  * 0x4b2d02
 res_21 ^= 0x4b59b93a
 res_21 -= x_9  * 0x84bb2c
