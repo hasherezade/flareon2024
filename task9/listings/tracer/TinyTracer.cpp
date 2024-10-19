@@ -856,13 +856,22 @@ int getValIndx(ADDRINT rax)
 
 void printArithm(std::stringstream &s1, const ADDRINT& val1, const ADDRINT& val2)
 {
-    if ((int64_t)val2 > (int64_t)val1) {
-        ADDRINT diff = (int64_t)val2 - (int64_t)val1;
-        s1 << "res += 0x" << diff;
+    {
+        ADDRINT diff = val2 - val1;
+        diff &= 0x0FFFFFFFF;
+        s1 << "res += 0x" << diff;//<< "#[ " << val2 << " - " << val1 << " ]";
     }
-    else {
-        ADDRINT diff = (int64_t)val1 - (int64_t)val2;
-        s1 << "res -= 0x" << diff;
+    s1 << " ; ";
+    {
+        ADDRINT diff = val1 - val2;
+        diff &= 0x0FFFFFFFF;
+        s1 << "res -= 0x" << diff;// << "#[ " << val1 << " - " << val2 << " ]";
+    }
+    s1 << " ; ";
+    {
+        ADDRINT diff = val2 ^ val1;
+        diff &= 0x0FFFFFFFF;
+        s1 << " res ^= 0x" << diff;
     }
 }
 
@@ -875,9 +884,6 @@ void printDifference(std::stringstream &mS, const ADDRINT& changedTracked, const
     s1 << std::hex;
     s1 << "#[ ";
     printArithm(s1, changedTracked, changed);
-    s1 << " ; ";
-    ADDRINT diff = (int64_t)changed ^ (int64_t)changedTracked;
-    s1 << " res ^= 0x" << diff;
     s1 << " ] ";
     mS << " UNK: " << s1.str();
     
@@ -1041,10 +1047,12 @@ std::string dumpContext(const std::string &disasm, const CONTEXT* ctx)
         if (mulCntr == 1) {
             std::stringstream s1;
             s1 << std::hex ;
+            s1 << "#[ ";
             printArithm(s1, trackedMulRes, changed);
+            s1 << " ]";
             traceLog.logListingLine(s1.str());
 
-            ss << " #[ " << s1.str() << " ]";
+            ss << " " << s1.str();
         }
         ss << "// [CNTR: " << mulCntr << "] ";
     }

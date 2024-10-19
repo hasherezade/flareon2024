@@ -105,7 +105,7 @@ def main():
         else:
             process_res(line, count)
     print(only_clean)
-    #print_constraints(only_clean)
+    print_constraints(only_clean)
     
 if __name__ == "__main__":
     sys.exit(main())
