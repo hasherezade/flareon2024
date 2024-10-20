@@ -1,0 +1,71 @@
+alias         - Displays, creates, or deletes UEFI Shell aliases.
+attrib        - Displays or modifies the attributes of files or directories.
+bcfg          - Manages the boot and driver options that are stored in NVRAM.
+cd            - Displays or changes the current directory.
+cls           - Clears the console output and optionally changes the background and foreground color.
+comp          - Compares the contents of two files on a byte-for-byte basis.
+connect       - Binds a driver to a specific device and starts the driver.
+cp            - Copies one or more files or directories to another location.
+date          - Displays and sets the current date for the system.
+dblk          - Displays one or more blocks from a block device.
+decrypt_file  - Decrypts a user chosen .c4tb file from a mounted storage, given a decryption key.
+devices       - Displays the list of devices managed by UEFI drivers.
+devtree       - Displays the UEFI Driver Model compliant device tree.
+dh            - Displays the device handles in the UEFI environment.
+disconnect    - Disconnects one or more drivers from the specified devices.
+dmem          - Displays the contents of system or device memory.
+dmpstore      - Manages all UEFI variables.
+drivers       - Displays the UEFI driver list.
+drvcfg        - Invokes the driver configuration.
+drvdiag       - Invokes the Driver Diagnostics Protocol.
+echo          - Controls script file command echoing or displays a message.
+edit          - Provides a full screen text editor for ASCII or UCS-2 files.
+eficompress   - Compresses a file using UEFI Compression Algorithm.
+efidecompress - Decompresses a file using UEFI Decompression Algorithm.
+else          - Identifies the code executed when 'if' is FALSE.
+endfor        - Ends a 'for' loop.
+endif         - Ends the block of a script controlled by an 'if' statement.
+exit          - Exits the UEFI Shell or the current script.
+for           - Starts a loop based on 'for' syntax.
+getmtc        - Gets the MTC from BootServices and displays it.
+goto          - Moves around the point of execution in a script.
+help          - Displays the UEFI Shell command list or verbose command help.
+hexedit       - Provides a full screen hex editor for files, block devices, or memory.
+if            - Executes commands in specified conditions.
+ifconfig      - Modifies the default IP address of the UEFI IPv4 Network Stack.
+initrd        - Registers or unregisters a file as Linux initrd.
+load          - Loads a UEFI driver into memory.
+loadpcirom    - Loads a PCI Option ROM.
+ls            - Lists the contents of a directory or file information.
+map           - Displays or defines file system mappings.
+memmap        - Displays the memory map maintained by the UEFI environment.
+mkdir         - Creates one or more new directories.
+mm            - Displays or modifies MEM/MMIO/IO/PCI/PCIE address space.
+mode          - Displays or changes the console output device mode.
+mv            - Moves one or more files to a destination within or between file systems.
+openinfo      - Displays the protocols and agents associated with a handle.
+parse         - Retrieves a value from a standard format output file.
+pause         - Pauses a script and waits for an operator to press a key.
+pci           - Displays PCI device list or PCI function configuration space and PCIe extended
+configuration space.
+ping          - Ping the target host with an IPv4 stack.
+reconnect     - Reconnects drivers to the specific device.
+reset         - Resets the system.
+rm            - Deletes one or more files or directories.
+sermode       - Sets serial port attributes.
+set           - Displays or modifies UEFI Shell environment variables.
+setsize       - Adjusts the size of a file.
+setvar        - Displays or modifies a UEFI variable.
+shift         - Shifts in-script parameter positions.
+smbiosview    - Displays SMBIOS information.
+stall         - Stalls the operation for a specified number of microseconds.
+time          - Displays or sets the current time for the system.
+timezone      - Displays or sets time zone information.
+touch         - Updates the filename timestamp with the current system date and time.
+type          - Sends the contents of a file to the standard output device.
+unload        - Unloads a driver image that was already loaded.
+varpolicy     - Lists UEFI variable policy information.
+ver           - Displays UEFI Firmware version information.
+vol           - Displays or modifies information about a disk volume.
+Help usage:help [cmd|pattern|special] [-usage] [-verbose] [-section name][-b]
+
