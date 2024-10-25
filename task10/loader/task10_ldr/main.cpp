@@ -73,13 +73,12 @@ int process()
 		return -1;
 	}
 	const ULONG_PTR func_va = (ULONG_PTR)g_Payload + FUNC_OFFSET;
-	//the simplest prototype of the main fuction:
-	int basic_main(void);
-	auto new_main = reinterpret_cast<decltype(&basic_main)>(func_va);
-	//std::cout << "Running func\n";
-	//call the Entry Point of the manually loaded PE:
-	int ret = new_main();
-	return ret;
+	//prototype of the function:
+	int verify_pass(void);
+	//fetch the function:
+	auto _verify_pass = reinterpret_cast<decltype(&verify_pass)>(func_va);
+	//run it:
+	return _verify_pass();
 }
 
 void fill_pass(BYTE* _opcode, char* p)
@@ -229,7 +228,7 @@ bool brutforceCat3(BYTE* buf, size_t buf_size)
 	return true;
 }
 
-bool brutforceCat1(BYTE* buf, size_t buf_size)
+bool decodeCat1(BYTE* buf, size_t buf_size)
 {
 	BYTE* nextChar = g_OpcodeOut + 0xB0;
 	char password[32] = { 0 };
@@ -285,7 +284,7 @@ int _tmain(int argc, LPTSTR argv[])
 		}
 		else if (type == 1) {
 			std::cout << "Part1 brute\n";
-			isOk = brutforceCat1(buf, buf_size);
+			isOk = decodeCat1(buf, buf_size);
 		}
 		else if (type == 2) {
 			std::cout << "Part2 brute\n";
