@@ -157,6 +157,9 @@ res_0 ^= x_28  * 0xe21d3d
 res_0 ^= 0x5C911D23
 res_0 += 0x7E9B8587
 
+s.add(res_0 == 0)
+
+##
 
 res_1 = x_17  * 0x99aa81
 res_1 += 0x8b1215af
