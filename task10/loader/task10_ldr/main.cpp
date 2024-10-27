@@ -36,9 +36,6 @@ bool load_payload(LPCTSTR pe_path)
 		return false;
 	}
 
-	// if the loaded PE needs to access resources, you may need to connect it to the PEB:
-	peconv::set_main_module_in_peb((HMODULE)g_Payload);
-
 	g_OpcodeBlockPtr = (BYTE**)((ULONG_PTR)g_Payload + OPCODE_BLOCK_OFFSET);
 	g_OpcodeOut = (BYTE*)((ULONG_PTR)g_Payload + OPCODE_OUT);
 	g_DataStc = (BYTE*)((ULONG_PTR)g_Payload + DATA_STC);
@@ -225,8 +222,6 @@ bool decodeCat1(BYTE* buf, size_t buf_size)
 	}
 	return false;
 }
-
-#define PART3_BRUTE
 
 int _tmain(int argc, LPTSTR argv[])
 {
