@@ -6,8 +6,8 @@ The second issue to solve, is exception-based flow obfuscation. The shellcode co
 This deobfuscator will be used to rebuild the original binary (`serpentine.exe`) and make it easier to follow.
 Instead of calling the shellcode that is embedded, we will call its processed version. 
 Two sections will be appended to the `serpentine.exe` binary.
-1. The deobfuscated code
-2. The patched original code
+1. The patched original code (stating at VA `0x1408aa000`)
+2. The deobfuscated code (starting at VA `0x1410aa000`)
 
 The first section will contain the cleaned code blocks, without the HLT instructions. Whenever there is a need to call HLT, the execution will be redirected to the section 2, to call HLT from the original offset and have it handled by the original exception handler. 
 
@@ -21,11 +21,11 @@ From parsine the exception information we can learn how the code is redirected. 
 [...]
 ```
 
-How is this logic applied in the deobfuscated code (Section#1, starting at VA `0x1410aa000`):
+How is this logic applied in the deobfuscated code (Section#2):
 
 ```asm
 ; 0x1410aa000:
-jmp 0x1408aa000 ;jump to section#2, to call the HLT at offset 0
+jmp 0x1408aa000 ;jump to section#1, to call the HLT at offset 0
 
 ; 0x1410aa005:
 movabs r11, 0x10add7f49 
@@ -34,19 +34,19 @@ push 0x73775436
 push 0x68a04c43
 push 0x12917ff9
 add qword ptr [rsp + 0x18], 0x35ac399f
-jmp 0x1408aa107 ;jump to section#2, to call the HLT at offset 0x107
+jmp 0x1408aa107 ;jump to section#1, to call the HLT at offset 0x107
 
 ; 0x1410aa02e:
 mov rbp, qword ptr [r9 + 0x28]
 mov rdi, qword ptr [rbp + 0xe0]
 movzx rdi, dil
-jmp 0x1408aa20a  ;jump to section#2, to call the HLT at offset 0x20a
+jmp 0x1408aa20a  ;jump to section#1, to call the HLT at offset 0x20a
 
 0x1410aa042:
 [...]
 ```
 
-To preserve the code continuity in the deobfuscated section, we will also add patches in the Section#2 that calls the HLTs.
+To preserve the code continuity in the deobfuscated section, we will also add patches in the Section#1 that calls the HLTs.
 
 ```asm
 ; 0x1408aa000 :
@@ -68,6 +68,7 @@ hlt
 jmp 0x1410aa042
 ```
 
+The sections will be added to the patched version of `serpentine.exe` ([`serpentine_shc_static_base.exe`](serpentine_shc_static_base.exe)), which ensures that the shellcode will be run from the prepared section.
 
 
 ## Deobfuscator (`capstone_deobf.py`)
