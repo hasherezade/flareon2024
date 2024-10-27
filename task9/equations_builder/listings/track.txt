@@ -1,4 +1,3 @@
-
 { [rsp]  -> ef7a8c; rsp = 67fd330  !!! TRACKED_MULTIPLYING: #[ res = 34 * 0xef7a8c ] // [CNTR: 0]  }
 { rbp = ce2b41fd  !!! TRACKED_MULTIPLYING: #[ m = 69 * 0x45b53c ]  #[ res += 0x9d865d8d ]// [CNTR: 1]  }
 { rdi = ce2b41fd  TRACKED_CHANGED BY: sub rdi, qword ptr [rsi+0xb0] #[ res -= m ]  }
