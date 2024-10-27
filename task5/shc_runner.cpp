@@ -351,9 +351,9 @@ int main()
 	const size_t shellc_size = sizeof(shellc_data);
 	void* buf = mmap(0LL, shellc_size, 7, 34, -1, 0LL);
 	void *shellc = memcpy(buf, shellc_data, shellc_size);
-	int (*ret)() = (int(*)())shellc;
+	int (*shc_main)() = (int(*)())shellc;
 	std::cout << "Running the shellcode: " << std::hex << shellc << "\n";
-    ret();
+	shc_main();
 	std::cout << "Finished!\n";
 	return 0;
 }
