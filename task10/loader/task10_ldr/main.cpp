@@ -10,12 +10,10 @@ size_t g_PayloadSize = 0;
 
 #define FUNC_OFFSET 0x31274
 #define OPCODE_BLOCK_OFFSET 0xE85A8
-#define DATA_STC 0xE86C8
 #define OPCODE_OUT 0xE8ED0 
 #define PASS_BUF 0x168ED0
 
 BYTE** g_OpcodeBlockPtr = nullptr;
-BYTE* g_OpcodeBlock = nullptr;
 
 BYTE* g_OpcodeOut = nullptr;
 BYTE* g_DataStc = nullptr;
@@ -38,7 +36,6 @@ bool load_payload(LPCTSTR pe_path)
 
 	g_OpcodeBlockPtr = (BYTE**)((ULONG_PTR)g_Payload + OPCODE_BLOCK_OFFSET);
 	g_OpcodeOut = (BYTE*)((ULONG_PTR)g_Payload + OPCODE_OUT);
-	g_DataStc = (BYTE*)((ULONG_PTR)g_Payload + DATA_STC);
 	g_ValidPass = (BYTE**)((ULONG_PTR)g_Payload + PASS_BUF);
 	return true;
 }
@@ -88,10 +85,10 @@ int to_process(BYTE* buf, size_t buf_size, char* pass)
 	DWORD dataSize = dwBuf[1];
 	DWORD bytecodeOffset = dwBuf[2];
 	DWORD bytecodeSize = dwBuf[3];
-	g_OpcodeBlock = (BYTE*)(ULONGLONG)(bytecodeOffset + (ULONG_PTR)buf);
-	*g_OpcodeBlockPtr = g_OpcodeBlock;
+	BYTE* opcodeBlock = (BYTE*)(ULONGLONG)(bytecodeOffset + (ULONG_PTR)buf);
+	*g_OpcodeBlockPtr = opcodeBlock;
 
-	fill_pass(g_OpcodeBlock, pass);
+	fill_pass(opcodeBlock, pass);
 	return process();
 }
 
