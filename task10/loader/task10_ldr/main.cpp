@@ -31,27 +31,7 @@ bool load_payload(LPCTSTR pe_path)
 		std::cerr << "[!] The payload is already loaded!\n";
 		return false;
 	}
-#ifdef LOAD_FROM_PATH
-	//if the PE is dropped on the disk, you can load it from the file:
 	g_Payload = peconv::load_pe_executable(pe_path, g_PayloadSize);
-#else // load from memory buffer
-	/*
-	in this example the memory buffer is first loaded from the disk,
-	but it can as well be fetch from resources, or a hardcoded buffer
-	*/
-	size_t bufsize = 0;
-	BYTE* buf = peconv::load_file(pe_path, bufsize);
-	if (!buf) {
-		return false;
-	}
-	// if the file is NOT dropped on the disk, you can load it directly from a memory buffer:
-	g_Payload = peconv::load_pe_executable(buf, bufsize, g_PayloadSize, nullptr);
-	std::cout << "Loaded payload at base: " << std::hex << (ULONGLONG)g_Payload << std::endl;
-
-	// at this point we can free the buffer with the raw payload:
-	peconv::free_file(buf); buf = nullptr;
-	
-#endif
 	if (!g_Payload) {
 		return false;
 	}
