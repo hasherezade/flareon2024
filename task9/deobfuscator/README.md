@@ -42,7 +42,7 @@ mov rdi, qword ptr [rbp + 0xe0]
 movzx rdi, dil
 jmp 0x1408aa20a  ;jump to section#1, to call the HLT at offset 0x20a
 
-0x1410aa042:
+; 0x1410aa042:
 [...]
 ```
 
