@@ -1,0 +1,3 @@
+1. Built the PIN tool, following the instructions in the corresponding README.
+2. Copy the `Task9Tracer.dll` to the directory with the prepared binary `serpentine4_p1.exe`. Use `run_text.bat` and then `run_me.bat` to produce traces.
+3. Merge the obtained traces using the script: `cleanup.py`
