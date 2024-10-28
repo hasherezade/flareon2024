@@ -9,13 +9,13 @@ BYTE* g_Payload = nullptr;
 size_t g_PayloadSize = 0;
 
 #define FUNC_OFFSET 0x31274
-#define OPCODE_BLOCK_OFFSET 0xE85A8
-#define OPCODE_OUT 0xE8ED0 
+#define BYTECODE_BLOCK_OFFSET 0xE85A8
+#define BYTECODE_OUT 0xE8ED0 
 #define PASS_BUF 0x168ED0
 
-BYTE** g_OpcodeBlockPtr = nullptr;
+BYTE** g_BytecodeBlockPtr = nullptr;
 
-BYTE* g_OpcodeOut = nullptr;
+BYTE* g_BytecodeOut = nullptr;
 BYTE* g_DataStc = nullptr;
 BYTE** g_ValidPass = nullptr;
 
@@ -34,8 +34,8 @@ bool load_payload(LPCTSTR pe_path)
 		return false;
 	}
 
-	g_OpcodeBlockPtr = (BYTE**)((ULONG_PTR)g_Payload + OPCODE_BLOCK_OFFSET);
-	g_OpcodeOut = (BYTE*)((ULONG_PTR)g_Payload + OPCODE_OUT);
+	g_BytecodeBlockPtr = (BYTE**)((ULONG_PTR)g_Payload + BYTECODE_BLOCK_OFFSET);
+	g_BytecodeOut = (BYTE*)((ULONG_PTR)g_Payload + BYTECODE_OUT);
 	g_ValidPass = (BYTE**)((ULONG_PTR)g_Payload + PASS_BUF);
 	return true;
 }
@@ -55,7 +55,7 @@ int process()
 	return _verify_pass();
 }
 
-void fill_pass(BYTE* _opcode, char* p)
+void fill_pass(BYTE* _code, char* p)
 {
 	size_t indxs[] = { 5, 4, 12, 11, 19, 18, 26, 25, 33, 32, 40, 39, 47, 46, 54, 53 };
 	size_t count = sizeof(indxs) / sizeof(indxs[0]);
@@ -69,8 +69,8 @@ void fill_pass(BYTE* _opcode, char* p)
 		}
 		for (size_t i = 0; i < count; i++) {
 			size_t indx = indxs[i];
-			//printf("%d : %x : %x\n", indx, _opcode[indx], pass[i]);
-			_opcode[indx] = pass[i];
+			//printf("%d : %x : %x\n", indx, _code[indx], pass[i]);
+			_code[indx] = pass[i];
 		}
 	}
 }
@@ -85,10 +85,10 @@ int to_process(BYTE* buf, size_t buf_size, char* pass)
 	DWORD dataSize = dwBuf[1];
 	DWORD bytecodeOffset = dwBuf[2];
 	DWORD bytecodeSize = dwBuf[3];
-	BYTE* opcodeBlock = (BYTE*)(ULONGLONG)(bytecodeOffset + (ULONG_PTR)buf);
-	*g_OpcodeBlockPtr = opcodeBlock;
+	BYTE* bytecodeBlock = (BYTE*)(ULONGLONG)(bytecodeOffset + (ULONG_PTR)buf);
+	*g_BytecodeBlockPtr = bytecodeBlock;
 
-	fill_pass(opcodeBlock, pass);
+	fill_pass(bytecodeBlock, pass);
 	return process();
 }
 
@@ -96,8 +96,8 @@ bool brutforceCat2(BYTE* buf, size_t buf_size)
 {
 	char password[32] = { 0 };
 
-	BYTE* processed = g_OpcodeOut + 0xC8;
-	BYTE* encrypted = g_OpcodeOut + 0x90;
+	BYTE* processed = g_BytecodeOut + 0xC8;
+	BYTE* encrypted = g_BytecodeOut + 0x90;
 	int res = 0;
 	size_t pos = 0;
 
@@ -134,7 +134,7 @@ bool bruteCat3Chunk(BYTE* buf, size_t buf_size, std::vector<char> &charset, char
 
 	bool isDone = false;
 	bool anyFound = false;
-	BYTE* nextBlock = g_OpcodeOut + 0xE0;
+	BYTE* nextBlock = g_BytecodeOut + 0xE0;
 	
 	for (auto itr1 = charset.begin(); !isDone && itr1 != charset.end(); ++itr1) {
 		for (auto itr2 = charset.begin(); !isDone && itr2 != charset.end(); ++itr2) {
@@ -204,7 +204,7 @@ bool brutforceCat3(BYTE* buf, size_t buf_size)
 
 bool decodeCat1(BYTE* buf, size_t buf_size)
 {
-	BYTE* nextChar = g_OpcodeOut + 0xB0;
+	BYTE* nextChar = g_BytecodeOut + 0xB0;
 	char password[32] = { 0 };
 	::memset(password, ' ', 30);
 
@@ -275,7 +275,7 @@ int _tmain(int argc, LPTSTR argv[])
 #ifdef _TEST
 	{
 		const char* path = "data_out.bin";
-		if (save_to_file(path, g_OpcodeOut, 0x200)) {
+		if (save_to_file(path, g_BytecodeOut, 0x200)) {
 			std::cout << "Saved to: " << path << "\n";
 		}
 		else {
