@@ -1,3 +1,5 @@
+$ gdb sshd sshd.core.93794.0.0.11.1725917676
+
 [Sep  9 23:34]  sshd.core.93794.0.0.11.1725917676
 
 /var/lib/systemd
