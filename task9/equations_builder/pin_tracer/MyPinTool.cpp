@@ -370,7 +370,7 @@ VOID InstrumentInstruction(INS ins, VOID* v)
     {
         inWatchedModule = TRUE;
     }
-    // only the main module or shellcodes:
+    // only the main module:
     if (inWatchedModule && g_disasmStart) {
 
         INS_InsertCall(
