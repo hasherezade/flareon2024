@@ -327,7 +327,7 @@ std::string dumpContext(const std::string& disasm, const CONTEXT* ctx)
     return "";
 }
 
-VOID LogInstruction(const CONTEXT* ctxt, THREADID tid, std::string* disasmStr)
+VOID LogInstruction(const CONTEXT* ctxt, std::string* disasmStr)
 {
     if (!disasmStr) return;
 
@@ -349,7 +349,6 @@ VOID LogInstruction(const CONTEXT* ctxt, THREADID tid, std::string* disasmStr)
 
     if (base != UNKNOWN_ADDR && rva != UNKNOWN_ADDR) {
         std::stringstream ss;
-        ss << "[" << std::dec << tid << "] ";
         ss << disasm;
         traceLog.logLine("\t\t\t\t" + dumpContext(disasm, ctxt));
         traceLog.logInstruction(base, rva, ss.str());
@@ -377,7 +376,6 @@ VOID InstrumentInstruction(INS ins, VOID* v)
             ins,
             IPOINT_BEFORE, (AFUNPTR)LogInstruction,
             IARG_CONTEXT,
-            IARG_THREAD_ID,
             IARG_PTR, new std::string(INS_Disassemble(ins)),
             IARG_END
         );
