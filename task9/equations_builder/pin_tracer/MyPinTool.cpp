@@ -226,8 +226,8 @@ std::string dumpContext(const std::string& disasm, const CONTEXT* ctx)
         }
     }
     hasTrackedRes = _hasTrackedRes;
-
     if (wasLastMul) {
+        // the last operation was MUL, fetch and track the result:
         trackedMulRes = (ADDRINT)PIN_GetContextReg(ctx, REG_GAX);
         ss << " !!! MUL_RES: " << std::hex << trackedMulRes;
         wasLastMul = false;
@@ -266,7 +266,7 @@ std::string dumpContext(const std::string& disasm, const CONTEXT* ctx)
         }
     }
 
-    if (disasm.find("mul ") != std::string::npos) {
+    if (disasm.find("mul ") != std::string::npos) { // it is a MUL instruction
         const ADDRINT rax = (ADDRINT)PIN_GetContextReg(ctx, REG_GAX);
         ADDRINT changed = 0;
         if (changedReg != REG_STACK_PTR) {
@@ -274,7 +274,6 @@ std::string dumpContext(const std::string& disasm, const CONTEXT* ctx)
             changed = (ADDRINT)PIN_GetContextReg(ctx, changedReg);
         }
         bool showDiff = true;
-        ADDRINT m = rax * spVal;
 
         ss << " !!! TRACKED_MULTIPLYING: ";
 
@@ -287,7 +286,7 @@ std::string dumpContext(const std::string& disasm, const CONTEXT* ctx)
             s1 << "m";
 
         s1 << " = ";
-
+        // the input byte
         if (g_Test) {
             int indx = getValIndx(rax);
             s1 << "x_" << std::dec << indx << " ";
@@ -337,22 +336,19 @@ VOID LogInstruction(const CONTEXT* ctxt, std::string* disasmStr)
     PinLocker locker;
 
     const ADDRINT Address = (ADDRINT)PIN_GetContextReg(ctxt, REG_INST_PTR);
-
     const ADDRINT base = get_mod_base(Address);
     if (base == UNKNOWN_ADDR) {
         return;
     }
     const ADDRINT rva = Address - base;
+    // ensure that we are within boundaries of interest:
     if (rva < g_disasmStart || rva > g_disasmStop) {
         return;
     }
-
-    if (base != UNKNOWN_ADDR && rva != UNKNOWN_ADDR) {
-        std::stringstream ss;
-        ss << disasm;
-        traceLog.logLine("\t\t\t\t" + dumpContext(disasm, ctxt));
-        traceLog.logInstruction(base, rva, ss.str());
-    }
+    // log the context as it was before executing the instruction:
+    traceLog.logLine("\t\t\t\t" + dumpContext(disasm, ctxt));
+    // log the disassembly:
+    traceLog.logInstruction(base, rva, disasm);
 }
 
 
@@ -429,7 +425,7 @@ int main(int argc, char* argv[])
 
 
     cerr << "===============================================" << endl;
-    cerr << "This application is instrumented by MyPinTool" << endl;
+    cerr << "This application is instrumented by Task9Tracer" << endl;
     cerr << "===============================================" << endl;
 
     // Start the program, never returns
