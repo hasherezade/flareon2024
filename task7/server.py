@@ -17,7 +17,6 @@ def xor_buffers(buffer1, buffer2):
     return result
    
 def print_bigint(data):
-    #print(data)
     print_hex_dump(data)
     print("XORed: ")
     print_hex_dump(xor_buffers(data, xor_key))
@@ -44,21 +43,21 @@ def main():
             try:
                 print('connection from', client_address)
                 while True: 
+                    # print the received client coordinates:
                     data = client_connection.recv(48)
                     print("Received: %d bytes" % len(data))
                     print_bigint(data)
-                    
                     data = client_connection.recv(48)
                     print("Received: %d bytes" % len(data))
                     print_bigint(data)
-                    
-                    out = bytes.fromhex('A0D2EBA817E38B03CD063227BD32E353880818893AB02378D7DB3C71C5C725C6BBA0934B5D5E2D3CA6FA89FFBB374C3196A35EAF2A5E0B430021DE361AA58F8015981FFD0D9824B50AF23B5CCF16FA4E323483602D0754534D2E7A8AAF8174DC')
+                    # send the PCAP fragment, containing the server coordinates and the encrypted 'verify' keyword:
+                    out = bytes.fromhex('a0d2eba817e38b03cd063227bd32e353880818893ab02378d7db3c71c5c725c6bba0934b5d5e2d3ca6fa89ffbb374c3196a35eaf2a5e0b430021de361aa58f8015981ffd0d9824b50af23b5ccf16fa4e323483602d0754534d2e7a8aaf8174dcf272d54c31860f')
                     print("Sending: %d bytes" % len(out))
-                    print_bigint(out[0:len(xor_key)])
-                    print_bigint(out[len(xor_key):])
                     client_connection.sendall(out)
-                    buffer_verify = bytes.fromhex('7665726966790000000000000000000000000000')
-                    client_connection.sendall(buffer_verify)
+                    data = client_connection.recv(48)
+                    print("Received MSG: %d bytes" % len(data))
+                    print_hex_dump(data)
+                    # dummy command loop:
                     while True:
                         buffer2 = bytes.fromhex('31')
                         client_connection.sendall(buffer2)
